@@ -156,18 +156,37 @@ We can also work out the other derivative:
 \end{equation}
 and setting this to zero gives:
 \begin{equation}
- m\langle x^2\rangle +c\bar{x}=\langle xy\rangle
+ m\langle x_i^2\rangle_i +c\bar{x}=\langle x_iy_i\rangle_i
 \end{equation}
-where the $\langle\ldots\rangle$ is used for more complicated sample
-means, that is I could've written $\bar{xy}$ instead of $\langle
-xy\rangle$. The reason for not just using a bar is that it can be hard
-to distinguish $\bar{xy}$ from $\bar{x}\bar{y}$! Another common
-notation is to use some sort of big E, as in $E(xy)$ or
-$\mathbf{E}(xy)$ or $\mathbb{E}(xy)$, this is a subject with many
-notations, I'm afraid.
+where the $\langle\ldots\rangle_i$ is used for more complicated sample
+means, that is I could've written $\overline{xy}$ instead of $\langle
+x_iy_i\rangle_i$. In any case we can now solve for $m$ and $c$, we get
+\begin{equation}
+m=\frac{\langle (x_i-\bar{x})(y_i-\bar{y})\rangle_i}{\langle (x_i-\bar{x})^2\rangle_i}
+\end{equation}
+and
+\begin{equation}
+c=\bar{y}-m\bar{x}
+\end{equation}
+Thus $m$ depends on the sample average of the auto- and cross-correlation.
 
-
-
+Lets do the example above! There are eight samples with
+\begin{equation}
+\bar{x}=\frac{8+9+10+11+12+13+14+15}{8}=11.5
+\end{equation}
+and
+\begin{equation}
+\bar{y}=\frac{54 + 69 + 75 + 78 + 85 + 102 + 103 + 103}{8}=83.625
+\end{equation}
+Similarly
+\begin{equation}
+\langle (x_i-\bar{x})(y_i-\bar{y})\rangle_i=\frac{1}{8}\sum_i(x_i-11.5)(y_i-83.625)=\approx 37.56
+\end{equation}
+and
+\begin{equation}
+\langle (x_i-\bar{x})^2\rangle_i=\frac{1}{8}\sum_i(x_i-11.5)^2=\approx 5.25
+\end{equation}
+giving $m=7.1548$ and $c=1.3452$.
 \section*{Summary}
 
 \end{document}
