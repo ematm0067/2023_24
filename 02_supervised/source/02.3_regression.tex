@@ -126,7 +126,7 @@ multiple of how $f$ changes with $u$ and how $u$ changes with $x$:
 The chain rule is easy to remember because it sort of makes sense but
 it is also incredibly powerful, allowing any calculation you can
 perform to be differentiated. As an aside this is the essence of
-\textt{autograd}, the automatic differentiation routines that make
+\texttt {autograd}, the automatic differentiation routines that make
 modern machine learning possible. 
 
 In the case here let $u_i=mx_i+c-y_i$ so
@@ -150,7 +150,22 @@ we get
 \begin{equation}
 m\bar{x}+c=\bar{y}
 \end{equation}
- 
+We can also work out the other derivative:
+\begin{equation}
+\frac{\partial \mathcal{E}_2^2}{\partial m}=\frac{1}{n}\sum_i x_iu_i
+\end{equation}
+and setting this to zero gives:
+\begin{equation}
+ m\langle x^2\rangle +c\bar{x}=\langle xy\rangle
+\end{equation}
+where the $\langle\ldots\rangle$ is used for more complicated sample
+means, that is I could've written $\bar{xy}$ instead of $\langle
+xy\rangle$. The reason for not just using a bar is that it can be hard
+to distinguish $\bar{xy}$ from $\bar{x}\bar{y}$! Another common
+notation is to use some sort of big E, as in $E(xy)$ or
+$\mathbf{E}(xy)$ or $\mathbb{E}(xy)$, this is a subject with many
+notations, I'm afraid.
+
 
 
 \section*{Summary}
