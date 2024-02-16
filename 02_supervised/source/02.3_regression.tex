@@ -80,21 +80,77 @@ noise.
 However, this does not fully specify what we mean by the error, one
 idea would be to sum the individual errors:
 \begin{equation}
-  \mathcal{E}_1=\sum_i |\hat{y}_i-y|
+  \mathcal{E}_1=\frac{1}{n}\sum_i |\hat{y}_i-y|
 \end{equation}
 where, in the obvious way $\hat{y}_i=mx_i+c$. In fact this would be
-very inconvenient because the absolute value can be an awkward object; it has long been common to use the \textsl{root means square error} instead:
+very inconvenient because the absolute value can be an awkward object; it has long been common to use the \textsl{root mean square error} instead:
 \begin{equation}
-  \mathcal{E}_2=\sqrt{\sum_i (\hat{y}_i-y)^2}
+  \mathcal{E}_2=\sqrt{\frac{1}{n}\sum_i (\hat{y}_i-y)^2}
 \end{equation}
 We will see shortly that using the square makes the mathematics of
 finding $m$ and $c$ easier, but picking $\mathcal{E}_2$ over
 $\mathcal{E}_1$, or indeed over any other error function including
 \begin{equation}
-  \mathcal{E}_p=\sqrt[p]{\sum_i (\hat{y}_i-y)^2}
+  \mathcal{E}_p=\sqrt[p]{\frac{1}{n}\sum_i (\hat{y}_i-y)^2}
 \end{equation}
+In fact, along with the practical impetus to using $\mathcal{E}_2$,
+there is a principled argument based on models of the noise and the
+nature of prediction which describes reasonably generic circumstances
+where it is the best choice. We will not go into that here.
 
+So, we have decided our task is to pick the $m$ and $c$ that minimize
+$\mathcal{E}_2$. In fact, we will consider $\mathcal{E}_2^2$, the
+\textsl{mean square error} instead: since the square root is a
+monotonically increasing function the values of $m$ and $c$ that
+minimize $\mathcal{E}_2^2$ will also minimize
+$\mathcal{E}_2$. Substituting in for $\hat{y}_i$ we want to minimize
+\begin{equation}
+\mathcal{E}_2^2=\frac{1}{n}\sum_i(mx_i+c-y_i)^2
+\end{equation}
+To minimize we use calculus, a necessary condition for a minimum is that the partial derivatives vanish:
+\begin{equation}
+\frac{\partial \mathcal{E}_2^2}{\partial m}=\frac{\partial \mathcal{E}_2^2}{\partial c}=0
+\end{equation}
+Obviously this does not rule out the possibility of a saddlepoint or
+maximum, but in this example we are fortunate, looking at the form of
+$\mathcal{E}_2^2$ is should be clear that any stationary point is a
+minimum, this is easy enough to prove with second order derivatives,
+but we won't go into that here.
 
+The derivatives are easy enough using the chain rule, to remind you,
+if $f(x)=d(u(x))$ then the rate of change of $f$ with $x$ is the
+multiple of how $f$ changes with $u$ and how $u$ changes with $x$:
+\begin{equation}
+\frac{df}{dx}=\frac{df}{du}\frac{du}{dx}
+\end{equation}
+The chain rule is easy to remember because it sort of makes sense but
+it is also incredibly powerful, allowing any calculation you can
+perform to be differentiated. As an aside this is the essence of
+\textt{autograd}, the automatic differentiation routines that make
+modern machine learning possible. 
+
+In the case here let $u_i=mx_i+c-y_i$ so
+\begin{equation}
+\mathcal{E}_2^2=\frac{1}{n}\sum_iu_i^2
+\end{equation}
+and
+\begin{equation}
+\frac{\partial \mathcal{E}_2^2}{\partial c}=\sum_i\frac{\partial u_i^2}{\partial c}=\sum_i\frac{d u_i^2}{du_i}\frac{\partial u_i}{\partial c}=2\sum_i u_i
+\end{equation}
+since the derivative of $u_i$ with respect to $c$ is just one. Hence,
+one of the two conditions is
+\begin{equation}
+0=\sum_i u_i = m\frac{1}{n}\sum_i x_i + c\frac{1}{n}\sum_i 1-\frac{1}{n}\sum_i y_i
+\end{equation}
+and using a bar for the sample mean of a quantity:
+\begin{equation}
+\bar{z}=\frac{1}{n}\sum_i z_i
+\end{equation}
+we get
+\begin{equation}
+m\bar{x}+c=\bar{y}
+\end{equation}
+ 
 
 
 \section*{Summary}
