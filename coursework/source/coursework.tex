@@ -16,7 +16,12 @@
 
 Please download the \texttt{penguin.csv} dataset. This dataset has
 information about penguins of one of three types. You task is it
-explore the dataset and to predict the penguin type.
+explore the dataset and to predict the penguin type. The dataset is
+known as the Palmer Penguins and is found at:\\
+\\
+\texttt{allisonhorst.github.io/palmerpenguins/}\\
+\\
+This link contains information on how to cite the dataset.
 
 You should consider how to visualize the data and which algorithms to
 try. Nothing you do will be completely successful, this coursework is
@@ -29,26 +34,41 @@ investigation. Here are some thing you should consider:
   \item How to choose the hyperparameters of your model.
 \end{itemize}
 For good marks you should include some graphs that illustrate
-properties of the data and you should compare two algorithms, both to
-each other and to a baseline model. You should make sure any
-assessment is not restricted to the data used in train models or
-decide on metaparameters. In your report you should explain your
-decisions. You code will not be marked for elegance, but it should run
-correctly; it is expected you will use Python, but any of Python,
-Julia or R is fine. Do not include screenshots of graphs, they should
-be imported directly; resize them to the correct size before importing
-them, if the labels are tiny the graphs will not be marked.
+properties of the data and you should compare two classification
+algorithms, both to each other and to a baseline model. The algorithms
+you pick do not need to be unusual, for example $k$nn classification
+would be perfectly good, though, of course, for full marks this would
+include some consideration of how to pick $k$ and how to measure the
+distance, though, as you know, no approach to chosing $k$ is every
+going to be completely satisfactory. In addition, you should include
+either some exploratory regression or unsupervised learning; for
+regression you might regress two properties and examine whether the
+regression parameters are the same for each penguin type; unsupervised
+learning could use $k$-means, for example. You do not need to do both
+regression and unsupervised learning.
+
+You should make sure any assessment is not restricted to the data used
+in train models or decide on metaparameters. In your report you should
+explain your decisions. You code will not be marked for elegance, but
+it should run correctly; it is expected you will use Python, but any
+of Python, Julia or R is fine. Do not include screenshots of graphs,
+they should be imported directly; resize them to the correct size
+before importing them, if the labels are tiny the graphs will not be
+marked. Make sure figure captions are descriptive, it is better to
+have some overlap between figure captions and the main text than to
+have figure captions that are not reasonably self-contained.
 
 As a rough guide to marking:
 \begin{itemize}
-\item Initial description of the data, including some graphs or other approaches to visualisation. 8 marks.
+\item Initial description of the data, including some graphs or other approaches to visualisation. 6 marks.
+\item Either unsupervised learning or regression. 6 marks.
 \item Two algorithms should be tested, if only one algorithm is
-  included the 32 available marks will be halved.
-\item Overall presentation (4 marks), including use of appropriate
+  included the 28 available marks will be halved.
+\item Overall presentation (3 marks), including use of appropriate
   sections, plots, diagrams, or tables to make your point. Do not
   include code snippets in the report. Instead, describe in words or
   equations what you are implementing. Format equations correctly.
-\item Suitable choice of algorithms (6 marks).
+\item Suitable choice of algorithms (4 marks).
 \item Suitable choice of evaluation for algorithms (3 marks).
 \item Comparison with a suitable baseline (3 marks) and a justification for which baseline to use.
 \item A description of metaparameter selection (3 marks), if one
@@ -56,8 +76,8 @@ As a rough guide to marking:
   and why this do or does not make it a better algorithm for these
   data.
 \item Describe and compare the results from your two algorithms,
-  include a description of how you implemented the algorithms. (10 marks)
-\item There are some marks (3 marks) for something suprising and unusual.
+  include a description of how you implemented the algorithms. (6 marks)
+\item There are some marks (6 marks) for something suprising and unusual.
 \end{itemize}
 
 \subsection*{Question 2 (10 marks)}
@@ -89,5 +109,11 @@ been used. As always when using LaTeX, give yourself over to defaults,
 our expectation of what a document should look like has been
 conditioned on LaTeX, so it is best not to try to override the look of
 the document.
+
+Avoid code snippets in the report unless that feels like the best way
+to illustrate some subtle aspect of an algorithm; do always though
+consider a mathematical description if possible. You will be asked to
+submit code and it may be tested to make sure it works and matches
+your report. It will not, however, be marked in and of itself.
 
 \end{document}
