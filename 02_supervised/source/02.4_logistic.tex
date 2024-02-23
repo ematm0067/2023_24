@@ -55,20 +55,57 @@ value to stop the points covering each other, this is a common and
 useful graphical device used for data like this.
 \begin{center}
   \includegraphics[]{02.4_sneak.png}
-  \end{center}
-  Now, clearly there is something going on. If we take these data and
-  bin them in ten year age bands and calculating for each band what
-  fraction for each band says `sneaked' we get this:
+\end{center}
+
+  Now, clearly there is some relationship between age and usage. If we
+  take these data and bin them in ten year age bands and calculating
+  for each band what fraction for each band says `sneaked' we get
+  this:
 \begin{center}
-  \includegraphics[]{02.4_proportion.png}
+  \includegraphics[]{02.4_fraction.png}
   \end{center}
-  and it is obvious that younger people say `snuck' more often than
+  and it is clear that younger people say `snuck' more often than
   older. However, what we have learned so far is to model
 \begin{equation}
 \hat{u}=\beta_1 a+\beta_0
 \end{equation}
 where $a$ is the age and $u$ is some measure of
-`snuck-saying-ness'. This, though, clearly does not work.
+`snuck-saying-ness'. This, though, clearly does not work; partly
+because a line looks to be the wrong shape but mostly because there is
+a sort of category error. The data are not composed of quantitative
+measurements of `snuck-saying-ness', the individual participants are
+either `snuck' or `sneaked' and so the best measure of
+`snuck-saying-ness' must surely be a probability, the probability a
+participant will answer `snuck'. However $\hat{u}$ above does not look
+much like a probability: it isn't limited to values between zero and
+one.
+
+At its simplest the idea behind logistic regression is to take
+$\beta_1a+\beta_0$ and then use another function to `squash' it so
+that the values are between zero and one, so
+\begin{equation}
+\hat{p}=f(\beta_1 a+\beta_0)
+\end{equation}
+where $f:\mathbb{R}\rightarrow[0,1]$ and
+\begin{equation}
+\hat{p_i}=f(\beta_1 a)i+\beta_0)
+\end{equation}
+is not the estimated probability that someone aged $a_i$ will prefer
+`snuck'. One example of a function that does this is the logistic
+function, often denoted using a sigma:
+\begin{equation}
+  \sigma(x)=\frac{1}{1+e^{-x}}
+\end{equation}
+which looks like this
+\begin{center}
+  \includegraphics[]{02.4_logistic.png}
+\end{center}
+This isn't the only function that looks like this; there are lots of
+others, we will discuss why this particular example is chosen later.
+
+First, lets as how we should fix $\beta_0$ and $\beta_1$.
+
+
 
 \section*{Summary}
 In linear regression we assume the data come from a noisy version of a
