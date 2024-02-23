@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lfoot{\texttt{emamtm0067.github.io} / textt{ematm0044.github.io}}
+\lfoot{\texttt{emamtm0067.github.io} / \texttt{ematm0044.github.io}}
 \lhead{Introduction to AI - Report template}
 \rhead{\thepage}
 \cfoot{}
@@ -23,8 +23,26 @@ or
 \begin{equation}
   \pi=4\sum_{n=0}^\infty\frac{(-1)^{n}}{2n+1}
 \end{equation}
-where $\pi$ can be written in line by using \$'s. 
+where $\pi$ can be written in line by using \$'s. Here is a vector:
+\begin{equation}
+\mathbf{x}=\left(\begin{array}{c}x_1\\x_2\end{array}\right)
+\end{equation}
+You can write in \textbf{bold}, or \textsl{italics} or \texttt{true
+  type}, often the latter is used for specific commands or libraries in a
+programming language, as in `I used \texttt{numpy} v1.23.4 to\ldots'. Notice the use of the left quote symbol found in the top left of the keyboard to get the left quote. There is also blackboard bold often used for things like $\mathbb{R}$ for real numbers and there is calligraphic for fancy things like $\mathcal{L}$ but this is becoming increasing irrelevant to what you are likely to need! 
 
-I will add more to this template later today.
+There is a table at Table~\ref{tab:example} and a figure at Fig.~\ref{fig:example}.
 
+\begin{table}
+\begin{center}
+\begin{tabular}{l|cc}
+colour&size&weight\\
+\hline
+blue&12&14\\
+red&8&25
+\end{tabular}
+\end{center} 
+\caption{\textbf{An example table}. You need to specify the number of columns and how the text is justified, left, right or center. Each line ends in a double backslash and an ampersand, \&, separates each column.}
+\label{tab:example}
+\end{table} 
 \end{document}
