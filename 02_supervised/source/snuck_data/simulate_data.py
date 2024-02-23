@@ -55,6 +55,8 @@ simulated_df = generate_simulated_data(df)
 # Display the simulated data
 print(simulated_df)
 
+simulated_df.to_csv("simulated_data.csv", index=False)
+
 def jitter_y(y):
 
     jitter = 0.05  # Define the amount of jitter

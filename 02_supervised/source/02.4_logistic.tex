@@ -32,7 +32,7 @@ many on-going changes and tried to interpret them. The data are
 available, at least in summary form at
 \texttt{dialect.topography.artsci.utoronto.ca/}. In one example, from
 what is called the Golden Horseshoe, which extends along the western
-shore of Lake Ontario and includes the cities of Hamilton and Ontario,
+shore of Lake Ontario and includes the cities of Hamilton and Toronto,
 he discovered what to me looks like a surprising shift from weak to
 strong participle for the word \textsl{sneak}. He asked participants which they say from
 \begin{itemize}
@@ -41,20 +41,34 @@ strong participle for the word \textsl{sneak}. He asked participants which they 
 \end{itemize}
 and roughly speaking found that younger people prefer `snuck' to
 `sneaked', the so called strong form over the weak. I had assumed
-there was a general trend towards weak forms, certainly my grandma used to say ``he was treat'.
+there was a general trend towards weak forms.
 
 This graph below gives a simulated version of his data; the actual
-data have more points but bundle the participants into bands. For the
-convenience of this lesson I have made artificial data, with fewer
-points but where the ages take any value; the artificial data is
-designed to have the same broad statistical structure as the real
-data. In the graph age is plotted along the bottom, and the $y$-value
-is zero for participants who say they use `snuck' and one for those
-who use `sneaked'. A small jitter has been added to the $y$ value to
-stop the points covering each other, this is a common and useful graphical device used for data like this.
+data have more points but bundle the participants into age bands. For
+the convenience of this lesson I have made artificial data, with fewer
+points but where the ages take any whole-year value: the artificial
+data is designed to have the same broad statistical structure as the
+real data. In the graph age is plotted along the bottom, and the
+$y$-value is zero for participants who say they use `snuck' and one
+for those who use `sneaked'. A small jitter has been added to the $y$
+value to stop the points covering each other, this is a common and
+useful graphical device used for data like this.
 \begin{center}
   \includegraphics[]{02.4_sneak.png}
   \end{center}
+  Now, clearly there is something going on. If we take these data and
+  bin them in ten year age bands and calculating for each band what
+  fraction for each band says `sneaked' we get this:
+\begin{center}
+  \includegraphics[]{02.4_proportion.png}
+  \end{center}
+  and it is obvious that younger people say `snuck' more often than
+  older. However, what we have learned so far is to model
+\begin{equation}
+\hat{u}=\beta_1 a+\beta_0
+\end{equation}
+where $a$ is the age and $u$ is some measure of
+`snuck-saying-ness'. This, though, clearly does not work.
 
 \section*{Summary}
 In linear regression we assume the data come from a noisy version of a

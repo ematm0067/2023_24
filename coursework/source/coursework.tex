@@ -35,17 +35,19 @@ investigation. Here are some thing you should consider:
 \end{itemize}
 For good marks you should include some graphs that illustrate
 properties of the data and you should compare two classification
-algorithms, both to each other and to a baseline model. The algorithms
-you pick do not need to be unusual, for example $k$nn classification
-would be perfectly good, though, of course, for full marks this would
-include some consideration of how to pick $k$ and how to measure the
-distance, though, as you know, no approach to choosing $k$ is every
-going to be completely satisfactory. In addition, you should include
-either some exploratory regression or unsupervised learning; for
-regression you might regress two properties and examine whether the
-regression parameters are the same for each penguin type; unsupervised
-learning could use $k$-means, for example. You do not need to do both
-regression and unsupervised learning.
+algorithms, both to each other and to a baseline model. The baseline
+model is just the performance you would get if you guessed without
+reference to anything but the sizes of the populations in each
+class. The algorithms you pick do not need to be unusual, for example
+$k$nn classification would be perfectly good, though, of course, for
+full marks this would include some consideration of how to pick $k$
+and how to measure the distance, though, as you know, no approach to
+choosing $k$ is every going to be completely satisfactory. In addition,
+you should include either some exploratory regression or unsupervised
+learning; for regression you might regress two properties and examine
+whether the regression parameters are the same for each penguin type;
+unsupervised learning could use $k$-means, for example. You do not
+need to do both regression and unsupervised learning.
 
 Thus, there are four elements expected:
 \begin{enumerate}
@@ -59,15 +61,16 @@ compare the two approaches. More detail is provided by the marking
 scheme below.
 
 You should make sure any assessment is not restricted to the data used
-in train models or decide on metaparameters. In your report you should
-explain your decisions. You code will not be marked for elegance, but
-it should run correctly; it is expected you will use Python, but any
-of Python, Julia or R is fine. Do not include screenshots of graphs,
-they should be imported directly; resize them to the correct size
-before importing them, if the labels are tiny the graphs will not be
-marked. Make sure figure captions are descriptive, it is better to
-have some overlap between figure captions and the main text than to
-have figure captions that are not reasonably self-contained.
+in train models or decide on hyper-parameters: it is important to hold
+aside testing data. In your report you should explain your
+decisions. You code will not be marked for elegance, but it should run
+correctly; it is expected you will use Python, but any of Python,
+Julia or R is fine. Do not include screenshots of graphs, they should
+be imported directly; resize them to the correct size before importing
+them, if the labels are tiny the graphs will not be marked. Make sure
+figure captions are descriptive, it is better to have some overlap
+between figure captions and the main text than to have figure captions
+that are not reasonably self-contained.
 
 As a rough guide to marking:
 \begin{itemize}
