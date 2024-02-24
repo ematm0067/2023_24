@@ -36,7 +36,7 @@ plt.figure(figsize=(5, 2))
 
 snuck_fraction.plot(kind='line', color='skyblue', marker='o', linestyle='-', linewidth=2, markersize=8)
 
-plt.ylabel('Fraction of "Snuck" Usage')
+plt.ylabel('"sneaked" fraction')
 
 
 plt.xticks(rotation=45)
