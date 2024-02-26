@@ -2,7 +2,7 @@ Constituency,Surname,Firstname,Gender Id,Party Id,Party Abbreviation,Count Numbe
 Carlow-Kilkenny,AYLWARD,BOBBY,M,Fianna Fa/il,F.F.,10,2289,0,7550,,161,1,Ceatharlach-Cill Chainnigh
 Carlow-Kilkenny,BYRNE,HELENA,F,Renua Ireland,R.I.,10,0,1905,992,Excluded,162,1,Ceatharlach-Cill Chainnigh
 Carlow-Kilkenny,DEERING,PAT,M,Fine Gael,F.G.,10,0,0,5929,Excluded,163,1,Ceatharlach-Cill Chainnigh
-Carlow-Kilkenny,FUNCHION,KATHLEEN,F,Sinn Féin,S.F.,10,0,0,17493,Elected,164,1,Ceatharlach-Cill Chainnigh
+Carlow-Kilkenny,FUNCHION,KATHLEEN,F,Sinn Fe/in,S.F.,10,0,0,17493,Elected,164,1,Ceatharlach-Cill Chainnigh
 Carlow-Kilkenny,HAYES,ALAN,M,Non-Party,NON-P.,10,0,0,2347,Excluded,165,1,Ceatharlach-Cill Chainnigh
 Carlow-Kilkenny,HYNES,DENIS,M,The Labour Party,LAB.,10,0,357,2208,Excluded,166,1,Ceatharlach-Cill Chainnigh
 Carlow-Kilkenny,McGUINNESS,JOHN,M,Fianna Fa/il,F.F.,10,0,0,10558,Elected,167,1,Ceatharlach-Cill Chainnigh
@@ -13,7 +13,7 @@ Carlow-Kilkenny,O'NEILL,PATRICK,M,Fine Gael,F.G.,10,0,0,3674,Excluded,171,1,Ceat
 Carlow-Kilkenny,PHELAN,JOHN PAUL,M,Fine Gael,F.G.,10,0,0,6396,Elected,172,1,Ceatharlach-Cill Chainnigh
 Carlow-Kilkenny,WALLACE,ADRIENNE,F,Solidarity - People Before Profit,S.P.B.P.,10,0,0,1558,Excluded,174,1,Ceatharlach-Cill Chainnigh
 Carlow-Kilkenny,RAY,ANGELA,F,Non-Party,NON-P.,10,0,2738,214,Excluded,175,1,Ceatharlach-Cill Chainnigh
-Cavan-Monaghan,Carthy,Matt,M,Sinn Féin,S.F.,11,0,0,16310,Elected,186,2,An Cabha/n-Muineacha/n
+Cavan-Monaghan,Carthy,Matt,M,Sinn Fe/in,S.F.,11,0,0,16310,Elected,186,2,An Cabha/n-Muineacha/n
 Cavan-Monaghan,Donnelly,Tate,M,Green Party/ Comhaontas Glas,G.P.,11,0,0,2501,Excluded,187,2,An Cabha/n-Muineacha/n
 Cavan-Monaghan,Duffy,Joseph,M,Non-Party,NON-P.,11,0,2773,159,Excluded,188,2,An Cabha/n-Muineacha/n
 Cavan-Monaghan,Gallagher,Robbie,M,Fianna Fa/il,F.F.,11,0,0,5062,Excluded,189,2,An Cabha/n-Muineacha/n
@@ -24,7 +24,7 @@ Cavan-Monaghan,O'Reilly,T.P.,M,Fine Gael,F.G.,11,3385,0,5124,Excluded,194,2,An C
 Cavan-Monaghan,Smith,Brendan,M,Fianna Fa/il,F.F.,11,1027,0,7354,Elected,195,2,An Cabha/n-Muineacha/n
 Cavan-Monaghan,Smith,Emmett,M,Solidarity - People Before Profit,S.P.B.P.,11,0,1550,830,Excluded,196,2,An Cabha/n-Muineacha/n
 Cavan-Monaghan,Smyth,Niamh,F,Fianna Fa/il,F.F.,11,1080,0,5745,Elected,197,2,An Cabha/n-Muineacha/n
-Cavan-Monaghan,Tully,Pauline,F,Sinn Féin,S.F.,11,0,0,10166,Elected,198,2,An Cabha/n-Muineacha/n
+Cavan-Monaghan,Tully,Pauline,F,Sinn Fe/in,S.F.,11,0,0,10166,Elected,198,2,An Cabha/n-Muineacha/n
 Cavan-Monaghan,Van Der Spek,Liam,M,The Labour Party,LAB.,11,0,1859,983,Excluded,199,2,An Cabha/n-Muineacha/n
 Clare,Barrett,David,M,Non-Party,NON-P.,10,0,2572,400,Excluded,161,3,An Cla/r
 Clare,Breen,Pat,M,Fine Gael,F.G.,10,0,0,5406,Excluded,162,3,An Cla/r
@@ -40,8 +40,8 @@ Clare,McNamara,Michael,M,Non-Party,NON-P.,10,0,0,7332,Elected,172,3,An Cla/r
 Clare,O'Brien,Conor,M,Renua Ireland,R.I.,10,0,2789,187,Excluded,173,3,An Cla/r
 Clare,O'Donohoe,Theresa,F,Solidarity - People Before Profit,S.P.B.P.,10,0,1690,1196,Excluded,174,3,An Cla/r
 Clare,Woulfe,Joseph,M,Non-Party,NON-P.,10,0,1472,1218,Excluded,175,3,An Cla/r
-Clare,Wynne,Violet-Anne,F,Sinn Féin,S.F.,10,0,0,8987,Elected,176,3,An Cla/r
-Cork East,Buckley,Pat,M,Sinn Féin,S.F.,8,0,0,12587,Elected,161,4,Corcaigh Thoir
+Clare,Wynne,Violet-Anne,F,Sinn Fe/in,S.F.,10,0,0,8987,Elected,176,3,An Cla/r
+Cork East,Buckley,Pat,M,Sinn Fe/in,S.F.,8,0,0,12587,Elected,161,4,Corcaigh Thoir
 Cork East,Conor,Hannon,M,Aontú,A.,8,0,1030,1337,Excluded,162,4,Corcaigh Thoir
 Cork East,Kiely,Thomas,M,Non-Party,NON-P.,8,0,2099,435,Excluded,163,4,Corcaigh Thoir
 Cork East,Linehan-Foley,Mary,F,Non-Party,NON-P.,8,0,0,3903,Excluded,164,4,Corcaigh Thoir
@@ -58,7 +58,7 @@ Cork North Central,Barry,Mick,M,Solidarity - People Before Profit,S.P.B.P.,14,96
 Cork North Central,Burke,Colm,M,Fine Gael,F.G.,14,0,0,6646,Elected,162,5,Corcaigh Thuaidh-La/r
 Cork North Central,Coughlan,James,M,Workers Party,W.P.,14,0,2263,180,Excluded,163,5,Corcaigh Thuaidh-La/r
 Cork North Central,Fitzgerald,Tony,M,Fianna Fa/il,F.F.,14,0,0,3338,Excluded,164,5,Corcaigh Thuaidh-La/r
-Cork North Central,Gould,Thomas,M,Sinn Féin,S.F.,14,0,0,13811,Elected,165,5,Corcaigh Thuaidh-La/r
+Cork North Central,Gould,Thomas,M,Sinn Fe/in,S.F.,14,0,0,13811,Elected,165,5,Corcaigh Thuaidh-La/r
 Cork North Central,Halpin,Sinead,F,Social Democrats,S.D.,14,0,1087,1121,Excluded,166,5,Corcaigh Thuaidh-La/r
 Cork North Central,Hogan,Timothy Joseph (T.J.),M,Non-Party,NON-P.,14,0,2136,257,Excluded,167,5,Corcaigh Thuaidh-La/r
 Cork North Central,Keohane,Ger,M,Non-Party,NON-P.,14,0,1724,694,Excluded,168,5,Corcaigh Thuaidh-La/r
@@ -93,14 +93,14 @@ Cork South Central,McGrath,Michael,M,Fianna Fa/il,F.F.,8,620,0,9236,Elected,169,
 Cork South Central,Murray Walsh,Bobby,M,Solidarity - People Before Profit,S.P.B.P.,8,0,481,764,Excluded,170,7,Corcaigh Theas-La/r
 Cork South Central,O'Brien,William,M,Non-Party,NON-P.,8,0,2477,202,Excluded,171,7,Corcaigh Theas-La/r
 Cork South Central,O'Dwyer,Patricia,F,Social Democrats,S.D.,8,0,1419,1077,Excluded,172,7,Corcaigh Theas-La/r
-Cork South Central,Ó Laoghaire,Donnchadh,M,Sinn Féin,S.F.,8,0,0,14057,Elected,173,7,Corcaigh Theas-La/r
+Cork South Central,Ó Laoghaire,Donnchadh,M,Sinn Fe/in,S.F.,8,0,0,14057,Elected,173,7,Corcaigh Theas-La/r
 Cork South Central,O'Leary,Sean,M,Non-Party,NON-P.,8,0,2700,102,Excluded,174,7,Corcaigh Theas-La/r
 Cork South West,Cairns,Holly,F,Social Democrats,S.D.,8,1007,0,4696,Elected,161,8,Corcaigh Thiar Theas
 Cork South West,Coakley,Karen,F,Fine Gael,F.G.,8,0,25,2526,Excluded,162,8,Corcaigh Thiar Theas
 Cork South West,Coleman,Alan,M,Non-Party,NON-P.,8,0,747,1801,Excluded,163,8,Corcaigh Thiar Theas
 Cork South West,Collins,Michael,M,Non-Party,NON-P.,8,0,0,11712,Elected,164,8,Corcaigh Thiar Theas
 Cork South West,Connolly,Bernadette,F,Green Party/ Comhaontas Glas,G.P.,8,0,1007,1647,Excluded,165,8,Corcaigh Thiar Theas
-Cork South West,Hayes,Paul,M,Sinn Féin,S.F.,8,0,0,4777,Excluded,166,8,Corcaigh Thiar Theas
+Cork South West,Hayes,Paul,M,Sinn Fe/in,S.F.,8,0,0,4777,Excluded,166,8,Corcaigh Thiar Theas
 Cork South West,Lombard,Tim,M,Fine Gael,F.G.,8,1559,0,5865,,167,8,Corcaigh Thiar Theas
 Cork South West,Murphy O'Mahony,Margaret,F,Fianna Fa/il,F.F.,8,0,0,4077,Excluded,168,8,Corcaigh Thiar Theas
 Cork South West,O'Connor,Kevin,M,Solidarity - People Before Profit,S.P.B.P.,8,0,2337,427,Excluded,169,8,Corcaigh Thiar Theas
@@ -108,10 +108,10 @@ Cork South West,O'Leary,Sean,M,Non-Party,NON-P.,8,0,2737,33,Excluded,170,8,Corca
 Cork South West,O'Sullivan,Christopher,M,Fianna Fa/il,F.F.,8,0,0,6262,Elected,171,8,Corcaigh Thiar Theas
 Cork South West,Ruane,Mairead,F,Aontú,A.,8,0,2241,515,Excluded,172,8,Corcaigh Thiar Theas
 Donegal,Casey,Peter,M,Non-Party,NON-P.,9,0,1096,1143,Excluded,161,9,Dún na nGall
-Donegal,Doherty,Pearse,M,Sinn Féin,S.F.,9,0,0,21044,Elected,162,9,Dún na nGall
+Donegal,Doherty,Pearse,M,Sinn Fe/in,S.F.,9,0,0,21044,Elected,162,9,Dún na nGall
 Donegal,Gallagher,Pat The Cope,M,Fianna Fa/il,F.F.,9,1835,0,7469,Excluded,163,9,Dún na nGall
 Donegal,Harley,Martin M.,M,Fine Gael,F.G.,9,0,0,3056,Excluded,164,9,Dún na nGall
-Donegal,MacLochlainn,Pa/draig,M,Sinn Féin,S.F.,9,0,0,13891,Elected,165,9,Dún na nGall
+Donegal,MacLochlainn,Pa/draig,M,Sinn Fe/in,S.F.,9,0,0,13891,Elected,165,9,Dún na nGall
 Donegal,McConalogue,Charlie,M,Fianna Fa/il,F.F.,9,1477,0,8347,Elected,166,9,Dún na nGall
 Donegal,McConnell,Niall,M,Non-Party,NON-P.,9,0,2396,580,Excluded,167,9,Dún na nGall
 Donegal,Mc Guinness,Arthur Desmond,M,Non-Party,NON-P.,9,0,3119,56,Excluded,168,9,Dún na nGall
@@ -130,7 +130,7 @@ Dublin Bay North,Healy,David,M,Green Party/ Comhaontas Glas,G.P.,14,3408,0,5042,
 Dublin Bay North,Heney,Deirdre,F,Fianna Fa/il,F.F.,14,0,0,3643,Excluded,168,13,Cuan Bhaile Átha Cliath Thuaidh
 Dublin Bay North,Lyons,John,M,Non-Party,NON-P.,14,0,0,1882,Excluded,169,13,Cuan Bhaile Átha Cliath Thuaidh
 Dublin Bay North,McEvoy,Linda,F,Non-Party,NON-P.,14,0,2658,202,Excluded,170,13,Cuan Bhaile Átha Cliath Thuaidh
-Dublin Bay North,Mitchell,Denise,F,Sinn Féin,S.F.,14,0,0,21344,Elected,171,13,Cuan Bhaile Átha Cliath Thuaidh
+Dublin Bay North,Mitchell,Denise,F,Sinn Fe/in,S.F.,14,0,0,21344,Elected,171,13,Cuan Bhaile Átha Cliath Thuaidh
 Dublin Bay North,Mulvany,Bernard,M,Solidarity - People Before Profit,S.P.B.P.,14,0,0,1409,Excluded,172,13,Cuan Bhaile Átha Cliath Thuaidh
 Dublin Bay North,Noone,Catherine,F,Fine Gael,F.G.,14,0,572,2279,Excluded,173,13,Cuan Bhaile Átha Cliath Thuaidh
 Dublin Bay North,O'Brien,Michael,M,Solidarity - People Before Profit,S.P.B.P.,14,0,821,722,Excluded,174,13,Cuan Bhaile Átha Cliath Thuaidh
@@ -138,7 +138,7 @@ Dublin Bay North,O'Callaghan,Cian,M,Social Democrats,S.D.,14,0,0,6229,Elected,17
 Dublin Bay North,Ó Conara/in,Proinsias,M,Aontú,A.,14,0,1810,973,Excluded,176,13,Cuan Bhaile Átha Cliath Thuaidh
 Dublin Bay North,O'Leary,Sean,M,Non-Party,NON-P.,14,0,2949,16,Excluded,177,13,Cuan Bhaile Átha Cliath Thuaidh
 Dublin Bay North,Ó'Ríorda/in,Aodha/n,M,The Labour Party,LAB.,14,652,0,8127,Elected,178,13,Cuan Bhaile Átha Cliath Thuaidh
-Dublin Bay South,Andrews,Chris,M,Sinn Féin,S.F.,8,0,0,6361,Elected,161,17,Cuan Bhaile Átha Cliath Theas
+Dublin Bay South,Andrews,Chris,M,Sinn Fe/in,S.F.,8,0,0,6361,Elected,161,17,Cuan Bhaile Átha Cliath Theas
 Dublin Bay South,Burke,Norma,F,Non-Party,NON-P.,8,0,1864,110,Excluded,162,17,Cuan Bhaile Átha Cliath Theas
 Dublin Bay South,Dooley,Peter,M,Non-Party,NON-P.,8,0,1663,281,Excluded,163,17,Cuan Bhaile Átha Cliath Theas
 Dublin Bay South,Durcan,Sarah,F,Social Democrats,S.D.,8,0,0,1801,Excluded,164,17,Cuan Bhaile Átha Cliath Theas
@@ -163,7 +163,7 @@ Dublin Central,Fitzpatrick,Mary,F,Fianna Fa/il,F.F.,9,0,0,3228,Excluded,167,11,B
 Dublin Central,Gannon,Gary,M,Social Democrats,S.D.,9,570,0,2912,Elected,168,11,Baile Átha Cliath La/ir
 Dublin Central,Harrold,Rita,F,Solidarity - People Before Profit,S.P.B.P.,9,0,1155,201,Excluded,169,11,Baile Átha Cliath La/ir
 Dublin Central,Hourigan,Neasa,F,Green Party/ Comhaontas Glas,G.P.,9,0,0,3851,Elected,170,11,Baile Átha Cliath La/ir
-Dublin Central,McDonald,Mary Lou,F,Sinn Féin,S.F.,9,0,0,11223,Elected,171,11,Baile Átha Cliath La/ir
+Dublin Central,McDonald,Mary Lou,F,Sinn Fe/in,S.F.,9,0,0,11223,Elected,171,11,Baile Átha Cliath La/ir
 Dublin Central,Mulligan,Sarah Louise,F,Non-Party,NON-P.,9,0,1420,124,Excluded,172,11,Baile Átha Cliath La/ir
 Dublin Central,O'Leary,Sean,M,Non-Party,NON-P.,9,0,1554,12,Excluded,173,11,Baile Átha Cliath La/ir
 Dublin Central,Ryan,Éilis,F,Workers Party,W.P.,9,0,911,429,Excluded,174,11,Baile Átha Cliath La/ir
@@ -179,7 +179,7 @@ Dublin Fingal,Murphy,Tony,M,Non-Party,NON-P.,12,0,0,3622,Excluded,179,14,Baile Á
 Dublin Fingal,O'Brien,Darragh,M,Fianna Fa/il,F.F.,12,0,0,10111,Elected,180,14,Baile Átha Cliath - Fine Gall
 Dublin Fingal,O'Brien,Joe,M,Green Party/ Comhaontas Glas,G.P.,12,0,0,8400,Elected,181,14,Baile Átha Cliath - Fine Gall
 Dublin Fingal,O'Doherty,Gemma,F,Non-Party,NON-P.,12,0,1030,1252,Excluded,182,14,Baile Átha Cliath - Fine Gall
-Dublin Fingal,O'Reilly,Louise,F,Sinn Féin,S.F.,12,0,0,15792,Elected,183,14,Baile Átha Cliath - Fine Gall
+Dublin Fingal,O'Reilly,Louise,F,Sinn Fe/in,S.F.,12,0,0,15792,Elected,183,14,Baile Átha Cliath - Fine Gall
 Dublin Fingal,Reilly,James,M,Fine Gael,F.G.,12,0,0,3280,Excluded,184,14,Baile Átha Cliath - Fine Gall
 Dublin Fingal,Smith,Alistair,M,United People,U.P.,12,0,2547,43,Excluded,185,14,Baile Átha Cliath - Fine Gall
 Dublin Fingal,Smith,Duncan,M,The Labour Party,LAB.,12,2234,0,4513,Elected,187,14,Baile Átha Cliath - Fine Gall
@@ -193,13 +193,13 @@ Dublin Mid-West,Higgins,Emer,F,Fine Gael,F.G.,9,0,0,4487,Elected,194,643,Baile Á
 Dublin Mid-West,Kavanagh,Peter,M,Green Party/ Comhaontas Glas,G.P.,9,0,0,2785,Excluded,195,643,Baile Átha Cliath Thiar-Mea/n
 Dublin Mid-West,Kenny,Gino,M,Solidarity - People Before Profit,S.P.B.P.,9,1002,0,3572,Elected,196,643,Baile Átha Cliath Thiar-Mea/n
 Dublin Mid-West,Mc Clean,Caitríona,F,Fianna Fa/il,F.F.,9,0,1596,667,Excluded,197,643,Baile Átha Cliath Thiar-Mea/n
-Dublin Mid-West,Ó Broin,Eoin,M,Sinn Féin,S.F.,9,0,0,11842,Elected,198,643,Baile Átha Cliath Thiar-Mea/n
+Dublin Mid-West,Ó Broin,Eoin,M,Sinn Fe/in,S.F.,9,0,0,11842,Elected,198,643,Baile Átha Cliath Thiar-Mea/n
 Dublin Mid-West,Timmons,Francis,M,Non-Party,NON-P.,9,0,974,1103,Excluded,199,643,Baile Átha Cliath Thiar-Mea/n
 Dublin Mid-West,Tuffy,Joanna,F,The Labour Party,LAB.,9,0,522,1541,Excluded,200,643,Baile Átha Cliath Thiar-Mea/n
-Dublin Mid-West,Ward,Mark,M,Sinn Féin,S.F.,9,0,0,7621,Elected,201,643,Baile Átha Cliath Thiar-Mea/n
+Dublin Mid-West,Ward,Mark,M,Sinn Fe/in,S.F.,9,0,0,7621,Elected,201,643,Baile Átha Cliath Thiar-Mea/n
 Dublin North West,Conroy,Caroline,F,Green Party/ Comhaontas Glas,G.P.,6,0,0,1548,Excluded,161,15,Baile Átha Cliath Thiar Thuaidh
 Dublin North West,Croft,Ian,M,Non-Party,NON-P.,6,0,1577,209,Excluded,162,15,Baile Átha Cliath Thiar Thuaidh
-Dublin North West,Ellis,Dessie,M,Sinn Féin,S.F.,6,0,0,14375,Elected,163,15,Baile Átha Cliath Thiar Thuaidh
+Dublin North West,Ellis,Dessie,M,Sinn Fe/in,S.F.,6,0,0,14375,Elected,163,15,Baile Átha Cliath Thiar Thuaidh
 Dublin North West,Fitzgerald,Niall,M,Non-Party,NON-P.,6,0,1789,115,Excluded,164,15,Baile Átha Cliath Thiar Thuaidh
 Dublin North West,McAuliffe,Paul,M,Fianna Fa/il,F.F.,6,694,0,3902,Elected,165,15,Baile Átha Cliath Thiar Thuaidh
 Dublin North West,Montague,Andrew,M,The Labour Party,LAB.,6,0,785,848,Excluded,166,15,Baile Átha Cliath Thiar Thuaidh
@@ -213,7 +213,7 @@ Dublin Rathdown,Coughlan,Liam,M,Aontú,A.,8,0,1201,1413,Excluded,204,18,Baile Áth
 Dublin Rathdown,Madigan,Josepha,F,Fine Gael,F.G.,8,1924,0,6482,Elected,205,18,Baile Átha Cliath-Ra/th an Dúin
 Dublin Rathdown,Martin,Catherine,F,Green Party/ Comhaontas Glas,G.P.,8,0,0,8958,Elected,206,18,Baile Átha Cliath-Ra/th an Dúin
 Dublin Rathdown,McCarthy,Lettie,F,The Labour Party,LAB.,8,0,0,3179,Excluded,207,18,Baile Átha Cliath-Ra/th an Dúin
-Dublin Rathdown,Nic Cormaic,Sorcha Nic Cormaic,F,Sinn Féin,S.F.,8,0,0,4926,Excluded,208,18,Baile Átha Cliath-Ra/th an Dúin
+Dublin Rathdown,Nic Cormaic,Sorcha Nic Cormaic,F,Sinn Fe/in,S.F.,8,0,0,4926,Excluded,208,18,Baile Átha Cliath-Ra/th an Dúin
 Dublin Rathdown,Noonan,Patrick,M,Non-Party,NON-P.,8,0,2301,350,Excluded,209,18,Baile Átha Cliath-Ra/th an Dúin
 Dublin Rathdown,Ó Ceannabha/in,Eoghan,M,Solidarity - People Before Profit,S.P.B.P.,8,0,971,1498,Excluded,210,18,Baile Átha Cliath-Ra/th an Dúin
 Dublin Rathdown,Richmond,Neale,M,Fine Gael,F.G.,8,897,0,6743,Elected,211,18,Baile Átha Cliath-Ra/th an Dúin
@@ -229,13 +229,13 @@ Dublin South Central,Kerrigan,Alan,M,Non-Party,NON-P.,6,0,1908,146,Excluded,168,
 Dublin South Central,Moynihan,Rebecca,F,The Labour Party,LAB.,6,0,0,2095,Excluded,169,16,Baile Átha Cliath Theas-La/r
 Dublin South Central,Murray,Richard,M,Non-Party,NON-P.,6,0,1653,207,Excluded,170,16,Baile Átha Cliath Theas-La/r
 Dublin South Central,O'Leary,Sean,M,Non-Party,NON-P.,6,0,2094,38,Excluded,171,16,Baile Átha Cliath Theas-La/r
-Dublin South Central,Ó'Snodaigh,Aengus,M,Sinn Féin,S.F.,6,0,0,17015,Elected,172,16,Baile Átha Cliath Theas-La/r
+Dublin South Central,Ó'Snodaigh,Aengus,M,Sinn Fe/in,S.F.,6,0,0,17015,Elected,172,16,Baile Átha Cliath Theas-La/r
 Dublin South Central,Smith,Bríd,F,Solidarity - People Before Profit,S.P.B.P.,6,0,0,4753,Elected,173,16,Baile Átha Cliath Theas-La/r
 Dublin South West,Ahern,Ciara/n,M,The Labour Party,LAB.,11,0,0,3603,Excluded,213,19,Baile Átha Cliath Thiar Theas
 Dublin South West,Bailey,Carly,F,Social Democrats,S.D.,11,0,0,2761,Excluded,214,19,Baile Átha Cliath Thiar Theas
 Dublin South West,Brophy,Colm,M,Fine Gael,F.G.,11,0,0,8269,Elected,215,19,Baile Átha Cliath Thiar Theas
 Dublin South West,Condren,Anne Marie,F,Renua Ireland,R.I.,11,0,1831,886,Excluded,216,19,Baile Átha Cliath Thiar Theas
-Dublin South West,Crowe,Sea/n,M,Sinn Féin,S.F.,11,0,0,20077,Elected,217,19,Baile Átha Cliath Thiar Theas
+Dublin South West,Crowe,Sea/n,M,Sinn Fe/in,S.F.,11,0,0,20077,Elected,217,19,Baile Átha Cliath Thiar Theas
 Dublin South West,Duff,Mick,M,Non-Party,NON-P.,11,0,606,1268,Excluded,218,19,Baile Átha Cliath Thiar Theas
 Dublin South West,Duffy,Francis Noel,M,Green Party/ Comhaontas Glas,G.P.,11,123,0,4961,Elected,219,19,Baile Átha Cliath Thiar Theas
 Dublin South West,Dwyer,Philip,M,The National Party - An Pa/irtí Na/isiúnta,T.N.P.A.P.N.,11,0,2199,508,Excluded,220,19,Baile Átha Cliath Thiar Theas
@@ -252,7 +252,7 @@ Dublin West,Casey,Peter,M,Non-Party,NON-P.,6,0,1474,495,Excluded,230,20,Baile Át
 Dublin West,Chambers,Jack,M,Fianna Fa/il,F.F.,6,0,0,6892,Elected,231,20,Baile Átha Thiar
 Dublin West,Coppinger,Ruth,F,Solidarity - People Before Profit,S.P.B.P.,6,1146,0,4353,,232,20,Baile Átha Thiar
 Dublin West,Currie,Emer,F,Fine Gael,F.G.,6,0,152,1870,Excluded,233,20,Baile Átha Thiar
-Dublin West,Donnelly,Paul,M,Sinn Féin,S.F.,6,0,0,12456,Elected,234,20,Baile Átha Thiar
+Dublin West,Donnelly,Paul,M,Sinn Fe/in,S.F.,6,0,0,12456,Elected,234,20,Baile Átha Thiar
 Dublin West,MacManus,Edward,M,Aontú,A.,6,0,660,1062,Excluded,235,20,Baile Átha Thiar
 Dublin West,O'Gorman,Roderic,M,Green Party/ Comhaontas Glas,G.P.,6,466,0,4901,Elected,236,20,Baile Átha Thiar
 Dublin West,O'Leary,Sean,M,Non-Party,NON-P.,6,0,2117,24,Excluded,237,20,Baile Átha Thiar
@@ -264,12 +264,12 @@ Dun Laoghaire,Carroll MacNeill,Jennifer,F,Fine Gael,F.G.,8,398,0,7754,Elected,24
 Dun Laoghaire,Devlin,Cormac,M,Fianna Fa/il,F.F.,8,1388,0,5715,Elected,243,21,Dún Laoghaire
 Dun Laoghaire,Hanafin,Mary,F,Fianna Fa/il,F.F.,8,0,0,4196,Excluded,244,21,Dún Laoghaire
 Dun Laoghaire,Mitchell O'Connor,Mary,F,Fine Gael,F.G.,8,1847,0,7330,,245,21,Dún Laoghaire
-Dun Laoghaire,O'Brien,Shane,M,Sinn Féin,S.F.,8,0,0,6002,Excluded,246,21,Dún Laoghaire
+Dun Laoghaire,O'Brien,Shane,M,Sinn Fe/in,S.F.,8,0,0,6002,Excluded,246,21,Dún Laoghaire
 Dun Laoghaire,O'Connell,Juliet,F,The Labour Party,LAB.,8,0,0,3009,Excluded,247,21,Dún Laoghaire
 Dun Laoghaire,Ó Laoghaire,Con Óg,M,Irish Freedom Party,I.F.P.,8,0,2996,119,Excluded,248,21,Dún Laoghaire
 Dun Laoghaire,Quinn,Dave,M,Social Democrats,S.D.,8,0,1696,1382,Excluded,249,21,Dún Laoghaire
 Dun Laoghaire,Smyth,Ossian,M,Green Party/ Comhaontas Glas,G.P.,8,0,0,9300,Elected,250,21,Dún Laoghaire
-Dun Laoghaire,Tóibín,Mairéad,F,Aontú,A.,8,0,1576,1185,Excluded,251,21,Dún Laoghaire
+Dun Laoghaire,Tóibín,Maire/ad,F,Aontú,A.,8,0,1576,1185,Excluded,251,21,Dún Laoghaire
 Dun Laoghaire,Ward,Barry,M,Fine Gael,F.G.,8,0,0,5744,Excluded,252,21,Dún Laoghaire
 Dun Laoghaire,Waters,John,M,Non-Party,NON-P.,8,0,2190,925,Excluded,253,21,Dún Laoghaire
 Galway East,CANNEY,Sea/n,M,Non-Party,NON-P.,8,0,0,7815,Elected,161,22,Gaillimh Thoir
@@ -277,7 +277,7 @@ Galway East,CANNON,Ciaran,M,Fine Gael,F.G.,8,0,0,6298,Elected,162,22,Gaillimh Th
 Galway East,KILLILEA,Donagh Mark,M,Fianna Fa/il,F.F.,8,0,0,4932,Excluded,163,22,Gaillimh Thoir
 Galway East,MAC CANNA,Deagla/n,M,Renua Ireland,R.I.,8,0,2532,126,Excluded,164,22,Gaillimh Thoir
 Galway East,MADDEN,Eoin,M,Green Party/ Comhaontas Glas,G.P.,8,0,11,1924,Excluded,165,22,Gaillimh Thoir
-Galway East,O'HARA,Louis,M,Sinn Féin,S.F.,8,946,0,7108,,166,22,Gaillimh Thoir
+Galway East,O'HARA,Louis,M,Sinn Fe/in,S.F.,8,946,0,7108,,166,22,Gaillimh Thoir
 Galway East,O'REILLY,David,M,Non-Party,NON-P.,8,0,2412,246,Excluded,167,22,Gaillimh Thoir
 Galway East,RABBITTE,Anne,F,Fianna Fa/il,F.F.,8,609,0,5762,Elected,168,22,Gaillimh Thoir
 Galway East,REID,Peter,M,Social Democrats,S.D.,8,0,1766,848,Excluded,169,22,Gaillimh Thoir
@@ -290,7 +290,7 @@ Galway West,Ó Corcora/in,Cormac,M,Aontú,A.,13,0,1397,1058,Excluded,163,23,Gailli
 Galway West,Crowe,Ollie,M,Fianna Fa/il,F.F.,13,0,0,5175,Excluded,164,23,Gaillimh Thiar
 Galway West,Cubbard,Mike,M,Non-Party,NON-P.,13,0,0,2676,Excluded,165,23,Gaillimh Thiar
 Galway West,Cuív Ó,Éamon,M,Fianna Fa/il,F.F.,13,0,0,8522,Elected,166,23,Gaillimh Thiar
-Galway West,Farrell,Mairéad,F,Sinn Féin,S.F.,13,0,0,8464,Elected,167,23,Gaillimh Thiar
+Galway West,Farrell,Maire/ad,F,Sinn Fe/in,S.F.,13,0,0,8464,Elected,167,23,Gaillimh Thiar
 Galway West,O Flaherty,Daragh,M,Non-Party,NON-P.,13,0,2197,318,Excluded,168,23,Gaillimh Thiar
 Galway West,Grealish,Noel,M,Non-Party,NON-P.,13,0,0,8043,Elected,169,23,Gaillimh Thiar
 Galway West,Kyne,Sea/n,M,Fine Gael,F.G.,13,2483,0,5284,Excluded,170,23,Gaillimh Thiar
@@ -302,7 +302,7 @@ Galway West,Ó Tuathail,Niall,M,Social Democrats,S.D.,13,0,0,3623,Excluded,175,23
 Kerry,Bowler,John,M,Irish Freedom Party,I.F.P.,8,0,2597,473,Excluded,161,24,Ciarraí
 Kerry,Brassil,John,M,Fianna Fa/il,F.F.,8,4290,0,5431,,162,24,Ciarraí
 Kerry,Cronin,Ted,M,Non-Party,NON-P.,8,0,2693,391,Excluded,163,24,Ciarraí
-Kerry,Daly,Pa,M,Sinn Féin,S.F.,8,0,0,15733,Elected,164,24,Ciarraí
+Kerry,Daly,Pa,M,Sinn Fe/in,S.F.,8,0,0,15733,Elected,164,24,Ciarraí
 Kerry,Foley,Norma,F,Fianna Fa/il,F.F.,8,956,0,6856,Elected,165,24,Ciarraí
 Kerry,Foran,Sonny,M,Aontú,A.,8,0,1833,1109,Excluded,166,24,Ciarraí
 Kerry,Griffin,Brendan,M,Fine Gael,F.G.,8,0,0,10296,Elected,167,24,Ciarraí
@@ -312,7 +312,7 @@ Kerry,Kennelly,Mike,M,Fine Gael,F.G.,8,0,0,3974,Excluded,170,24,Ciarraí
 Kerry,Moriarty,Norma,F,Fianna Fa/il,F.F.,8,0,0,3767,Excluded,171,24,Ciarraí
 Kerry,Murphy,Cleo,F,Green Party/ Comhaontas Glas,G.P.,8,0,0,4122,Excluded,172,24,Ciarraí
 Kerry,O'Leary,Sean,M,Non-Party,NON-P.,8,0,3177,33,Excluded,173,24,Ciarraí
-Kildare North,Cronin,Réada,F,Sinn Féin,S.F.,6,0,0,8705,Elected,163,26,Cill Dara Thuaidh
+Kildare North,Cronin,Re/ada,F,Sinn Fe/in,S.F.,6,0,0,8705,Elected,163,26,Cill Dara Thuaidh
 Kildare North,Durkan,Bernard,M,Fine Gael,F.G.,6,0,0,5447,Elected,164,26,Cill Dara Thuaidh
 Kildare North,Lawless,James,M,Fianna Fa/il,F.F.,6,833,0,7029,Elected,165,26,Cill Dara Thuaidh
 Kildare North,Lawlor,Anthony,M,Fine Gael,F.G.,6,0,0,3621,Excluded,166,26,Cill Dara Thuaidh
@@ -320,7 +320,7 @@ Kildare North,Mahon,Paul,M,Solidarity - People Before Profit,S.P.B.P.,6,0,1687,8
 Kildare North,Martin,Vincent P.,M,Green Party/ Comhaontas Glas,G.P.,6,0,0,5100,Excluded,168,26,Cill Dara Thuaidh
 Kildare North,Monaghan,David,M,Non-Party,NON-P.,6,0,2351,197,Excluded,169,26,Cill Dara Thuaidh
 Kildare North,Murphy,Catherine,F,Social Democrats,S.D.,6,0,0,9808,Elected,170,26,Cill Dara Thuaidh
-Kildare North,Ó Riain,Séamus,M,Renua Ireland,R.I.,6,0,1581,967,Excluded,171,26,Cill Dara Thuaidh
+Kildare North,Ó Riain,Se/amus,M,Renua Ireland,R.I.,6,0,1581,967,Excluded,171,26,Cill Dara Thuaidh
 Kildare North,O'Rourke,Frank,M,Fianna Fa/il,F.F.,6,2234,0,6336,,172,26,Cill Dara Thuaidh
 Kildare North,Stagg,Emmet,M,The Labour Party,LAB.,6,0,0,2751,Excluded,173,26,Cill Dara Thuaidh
 Kildare North,Swords,Wayne,M,Non-Party,NON-P.,6,0,2425,123,Excluded,174,26,Cill Dara Thuaidh
@@ -332,7 +332,7 @@ Kildare South,Maher,Ronan,M,Green Party/ Comhaontas Glas,G.P.,8,0,811,1639,Exclu
 Kildare South,McLoughlin Healy,Fiona,F,Non-Party,NON-P.,8,0,0,3616,Excluded,168,187,Cill Dara Theas
 Kildare South,Mhic Gib,Anita,F,Aontú,A.,8,0,2258,697,Excluded,169,187,Cill Dara Theas
 Kildare South,O'Loughlin,Fiona,F,Fianna Fa/il,F.F.,8,1391,0,5927,Excluded,170,187,Cill Dara Theas
-Kildare South,Ryan,Patricia,F,Sinn Féin,S.F.,8,0,0,10155,Elected,171,187,Cill Dara Theas
+Kildare South,Ryan,Patricia,F,Sinn Fe/in,S.F.,8,0,0,10155,Elected,171,187,Cill Dara Theas
 Kildare South,Uí Bhroin,Róisín,F,Solidarity - People Before Profit,S.P.B.P.,8,0,2357,598,Excluded,172,187,Cill Dara Theas
 Kildare South,Wall,Mark,M,The Labour Party,LAB.,8,0,0,5899,Excluded,173,187,Cill Dara Theas
 Laois-Offaly,Corcoran Kennedy,Marcella,F,Fine Gael,F.G.,11,0,0,4519,Excluded,161,27,Laois-Uíbh Fhailí
@@ -347,7 +347,7 @@ Laois-Offaly,Nolan,Carol,F,Non-Party,NON-P.,11,0,0,5436,Elected,169,27,Laois-Uíb
 Laois-Offaly,Ormond,Peter,M,Fianna Fa/il,F.F.,11,0,0,4073,Excluded,170,27,Laois-Uíbh Fhailí
 Laois-Offaly,O'Rourke,Noel,M,Renua Ireland,R.I.,11,0,2537,290,Excluded,172,27,Laois-Uíbh Fhailí
 Laois-Offaly,Smollen,Ken,M,Irish Democratic Party,I.D.P.,11,0,0,2611,Excluded,173,27,Laois-Uíbh Fhailí
-Laois-Offaly,Stanley,Brian,M,Sinn Féin,S.F.,11,0,0,16654,Elected,174,27,Laois-Uíbh Fhailí
+Laois-Offaly,Stanley,Brian,M,Sinn Fe/in,S.F.,11,0,0,16654,Elected,174,27,Laois-Uíbh Fhailí
 Laois-Offaly,Touhy,Noel,M,The Labour Party,LAB.,11,0,0,2011,Excluded,175,27,Laois-Uíbh Fhailí
 Laois-Offaly,Tynan,Stephen,M,Solidarity - People Before Profit,S.P.B.P.,11,0,620,910,Excluded,176,27,Laois-Uíbh Fhailí
 Limerick City,Barrett,Rebecca,F,The National Party - An Pa/irtí Na/isiúnta,T.N.P.A.P.N.,9,0,1927,345,Excluded,161,28,Cathair Luimnigh
@@ -360,7 +360,7 @@ Limerick City,Leddin,Brian,M,Green Party/ Comhaontas Glas,G.P.,9,1019,0,3252,Ele
 Limerick City,O'Dea,Willie,M,Fianna Fa/il,F.F.,9,0,0,9198,Elected,168,28,Cathair Luimnigh
 Limerick City,O'Donnell,Kieran,M,Fine Gael,F.G.,9,0,0,6589,Elected,169,28,Cathair Luimnigh
 Limerick City,O'Sullivan,Jan,F,The Labour Party,LAB.,9,0,0,2729,Excluded,170,28,Cathair Luimnigh
-Limerick City,Quinlivan,Maurice,M,Sinn Féin,S.F.,9,0,0,11006,Elected,171,28,Cathair Luimnigh
+Limerick City,Quinlivan,Maurice,M,Sinn Fe/in,S.F.,9,0,0,11006,Elected,171,28,Cathair Luimnigh
 Limerick City,Ryan,Michael,M,Aontú,A.,9,0,447,1553,Excluded,172,28,Cathair Luimnigh
 Limerick County,Collins,Michael,M,Fianna Fa/il,F.F.,6,0,0,5150,Excluded,161,29,Contae Luimnigh
 Limerick County,Collins,Niall,M,Fianna Fa/il,F.F.,6,0,0,8436,Elected,162,29,Contae Luimnigh
@@ -369,14 +369,14 @@ Limerick County,Dalton,John,M,Renua Ireland,R.I.,6,0,2568,313,Excluded,164,29,Co
 Limerick County,Keating,Claire,F,Green Party/ Comhaontas Glas,G.P.,6,0,193,2503,Excluded,165,29,Contae Luimnigh
 Limerick County,Neville,Tom,M,Fine Gael,F.G.,6,0,0,5810,Excluded,166,29,Contae Luimnigh
 Limerick County,Ni Mhaoldhomhnaigh,Cristin,F,The National Party - An Pa/irtí Na/isiúnta,T.N.P.A.P.N.,6,0,2657,224,Excluded,167,29,Contae Luimnigh
-Limerick County,O'Ceallaigh,Seighin,M,Sinn Féin,S.F.,6,2568,0,6916,,168,29,Contae Luimnigh
+Limerick County,O'Ceallaigh,Seighin,M,Sinn Fe/in,S.F.,6,2568,0,6916,,168,29,Contae Luimnigh
 Limerick County,O'Donnell,Robert,M,Non-Party,NON-P.,6,0,2479,402,Excluded,169,29,Contae Luimnigh
 Limerick County,O'Donoghue,Conor,M,Aontú,A.,6,0,2167,714,Excluded,170,29,Contae Luimnigh
 Limerick County,O'Donoghue,Richard,M,Non-Party,NON-P.,6,1203,0,6021,Elected,171,29,Contae Luimnigh
 Limerick County,O'Donovan,Patrick,M,Fine Gael,F.G.,6,0,0,9228,Elected,172,29,Contae Luimnigh
 Longford-Westmeath,Burke,Peter,M,Fine Gael,F.G.,10,243,0,6617,Elected,161,30,An Longfort-An Iarmhí
 Longford-Westmeath,Carrigy,Michea/l,M,Fine Gael,F.G.,10,0,0,6334,Excluded,162,30,An Longfort-An Iarmhí
-Longford-Westmeath,Clarke,Sorca,F,Sinn Féin,S.F.,10,0,0,11848,Elected,163,30,An Longfort-An Iarmhí
+Longford-Westmeath,Clarke,Sorca,F,Sinn Fe/in,S.F.,10,0,0,11848,Elected,163,30,An Longfort-An Iarmhí
 Longford-Westmeath,Flaherty,Joe,M,Fianna Fa/il,F.F.,10,213,0,7666,Elected,164,30,An Longfort-An Iarmhí
 Longford-Westmeath,Heavin,Louise,F,Green Party/ Comhaontas Glas,G.P.,10,0,0,2325,Excluded,165,30,An Longfort-An Iarmhí
 Longford-Westmeath,Jackson,Donal,M,Non-Party,NON-P.,10,0,2737,71,Excluded,166,30,An Longfort-An Iarmhí
@@ -398,17 +398,17 @@ Louth,Dearey,Mark,M,Green Party/ Comhaontas Glas,G.P.,10,0,0,5418,Excluded,166,3
 Louth,Fergus,Audrey,F,Solidarity - People Before Profit,S.P.B.P.,10,0,0,1120,Excluded,167,31,Lú
 Louth,Fitzpatrick,Peter,M,Non-Party,NON-P.,10,999,0,6085,Elected,168,31,Lú
 Louth,McGahon,John,M,Fine Gael,F.G.,10,0,0,4442,Excluded,169,31,Lú
-Louth,Munster,Imelda,F,Sinn Féin,S.F.,10,0,0,17203,Elected,170,31,Lú
+Louth,Munster,Imelda,F,Sinn Fe/in,S.F.,10,0,0,17203,Elected,170,31,Lú
 Louth,Nash,Ged,M,The Labour Party,LAB.,10,119,0,5824,Elected,171,31,Lú
 Louth,O'Dowd,Fergus,M,Fine Gael,F.G.,10,496,0,6380,Elected,172,31,Lú
 Louth,Ó Murchú,Cathal,M,Irish Freedom Party,I.F.P.,10,0,1807,574,Excluded,173,31,Lú
-Louth,Ó Murchú,Ruairí,M,Sinn Féin,S.F.,10,0,0,12491,Elected,174,31,Lú
+Louth,Ó Murchú,Ruairí,M,Sinn Fe/in,S.F.,10,0,0,12491,Elected,174,31,Lú
 Louth,Sweeney,Eamon,M,Renua Ireland,R.I.,10,0,1782,794,Excluded,175,31,Lú
 Mayo,Calleary,Dara,M,Fianna Fa/il,F.F.,7,0,0,9163,Elected,184,32,Maigh Eo
 Mayo,Chambers,Lisa,F,Fianna Fa/il,F.F.,7,3960,0,6373,,185,32,Maigh Eo
-Mayo,Conway-Walsh,Rose,F,Sinn Féin,S.F.,7,0,0,14633,Elected,186,32,Maigh Eo
+Mayo,Conway-Walsh,Rose,F,Sinn Fe/in,S.F.,7,0,0,14633,Elected,186,32,Maigh Eo
 Mayo,Daly,Joe,M,Solidarity - People Before Profit,S.P.B.P.,7,0,2146,721,Excluded,187,32,Maigh Eo
-Mayo,De Barra,Gra/inne Sinéad,F,Non-Party,NON-P.,7,0,3099,84,Excluded,188,32,Maigh Eo
+Mayo,De Barra,Gra/inne Sine/ad,F,Non-Party,NON-P.,7,0,3099,84,Excluded,188,32,Maigh Eo
 Mayo,Dillon,Alan,M,Fine Gael,F.G.,7,1894,0,5198,Elected,189,32,Maigh Eo
 Mayo,Forkin,Sean,M,Non-Party,NON-P.,7,0,3136,59,Excluded,190,32,Maigh Eo
 Mayo,Lawless,Paul,M,Aontú,A.,7,0,0,2574,Excluded,191,32,Maigh Eo
@@ -429,14 +429,14 @@ Meath East,Keogan,Sharon,M,Non-Party,NON-P.,7,0,0,2475,Excluded,167,34,An Mhí Th
 Meath East,McCabe,Sea/n,M,Green Party/ Comhaontas Glas,G.P.,7,3940,0,3251,,168,34,An Mhí Thoir
 Meath East,McDonagh,Seamus,M,Workers Party,W.P.,7,0,2488,134,Excluded,169,34,An Mhí Thoir
 Meath East,McEntee,Helen,F,Fine Gael,F.G.,7,0,0,7691,Elected,170,34,An Mhí Thoir
-Meath East,O'Rourke,Darren,M,Sinn Féin,S.F.,7,0,0,10223,Elected,171,34,An Mhí Thoir
+Meath East,O'Rourke,Darren,M,Sinn Fe/in,S.F.,7,0,0,10223,Elected,171,34,An Mhí Thoir
 Meath East,Tóibín,Emer,F,Aontú,A.,7,0,917,1634,Excluded,172,34,An Mhí Thoir
 Meath West,Cassells,Shane,M,Fianna Fa/il,F.F.,6,2153,0,6742,,161,39,An Mhí Thiar
 Meath West,English,Damien,M,Fine Gael,F.G.,6,819,0,5499,Elected,162,39,An Mhí Thiar
 Meath West,French,Noel,M,Fine Gael,F.G.,6,0,0,2952,Excluded,163,39,An Mhí Thiar
-Meath West,Guirke,Johnny,M,Sinn Féin,S.F.,6,0,0,12652,Elected,164,39,An Mhí Thiar
+Meath West,Guirke,Johnny,M,Sinn Fe/in,S.F.,6,0,0,12652,Elected,164,39,An Mhí Thiar
 Meath West,Malone,John,M,Renua Ireland,R.I.,6,0,2305,209,Excluded,165,39,An Mhí Thiar
-Meath West,McMenamin,Séamus,M,Green Party/ Comhaontas Glas,G.P.,6,0,215,1935,Excluded,166,39,An Mhí Thiar
+Meath West,McMenamin,Se/amus,M,Green Party/ Comhaontas Glas,G.P.,6,0,215,1935,Excluded,166,39,An Mhí Thiar
 Meath West,Moore,Ronan,M,Social Democrats,S.D.,6,0,0,2376,Excluded,167,39,An Mhí Thiar
 Meath West,Reilly,Sarah,F,Fine Gael,F.G.,6,0,698,1817,Excluded,168,39,An Mhí Thiar
 Meath West,Tóibín,Peadar,M,Aontú,A.,6,0,0,7322,Elected,169,39,An Mhí Thiar
@@ -445,7 +445,7 @@ Roscommon-Galway,Fitzmaurice,Michael,M,Non-Party,NON-P.,6,0,0,13077,Elected,162,
 Roscommon-Galway,Fallon,Thomas P,M,Non-Party,NON-P.,6,0,2743,88,Excluded,163,996,Ros Coma/in-Gaillimh
 Roscommon-Galway,Hanley,Paul,M,The National Party - An Pa/irtí Na/isiúnta,T.N.P.A.P.N.,6,0,2521,319,Excluded,164,996,Ros Coma/in-Gaillimh
 Roscommon-Galway,Hope,James,M,Aontú,A.,6,0,2310,504,Excluded,165,996,Ros Coma/in-Gaillimh
-Roscommon-Galway,Kerrane,Claire,F,Sinn Féin,S.F.,6,859,0,8003,Elected,166,996,Ros Coma/in-Gaillimh
+Roscommon-Galway,Kerrane,Claire,F,Sinn Fe/in,S.F.,6,859,0,8003,Elected,166,996,Ros Coma/in-Gaillimh
 Roscommon-Galway,Leyden,Orla,F,Fianna Fa/il,F.F.,6,0,0,2953,Excluded,167,996,Ros Coma/in-Gaillimh
 Roscommon-Galway,Murphy,Eugene,M,Fianna Fa/il,F.F.,6,2200,0,4945,Excluded,168,996,Ros Coma/in-Gaillimh
 Roscommon-Galway,Naughten,Denis,M,Non-Party,NON-P.,6,0,0,8422,Elected,169,996,Ros Coma/in-Gaillimh
@@ -458,7 +458,7 @@ Sligo-Leitrim,Ellis,Shane,M,Fianna Fa/il,F.F.,15,0,0,2753,Excluded,164,35,Sligea
 Sligo-Leitrim,Feighan,Frankie,M,Fine Gael,F.G.,15,1447,0,5338,Elected,165,35,Sligeach-Liatroim
 Sligo-Leitrim,Gallagher,Bla/ithín,F,Green Party/ Comhaontas Glas,G.P.,15,0,460,1791,Excluded,166,35,Sligeach-Liatroim
 Sligo-Leitrim,Harkin,Marian,F,Non-Party,NON-P.,15,0,0,6972,Elected,167,35,Sligeach-Liatroim
-Sligo-Leitrim,Kenny,Martin,M,Sinn Féin,S.F.,15,0,0,15035,Elected,168,35,Sligeach-Liatroim
+Sligo-Leitrim,Kenny,Martin,M,Sinn Fe/in,S.F.,15,0,0,15035,Elected,168,35,Sligeach-Liatroim
 Sligo-Leitrim,MacSharry,Marc,M,Fianna Fa/il,F.F.,15,1403,0,7004,Elected,169,35,Sligeach-Liatroim
 Sligo-Leitrim,McCloskey,Anne,F,Aontú,A.,15,0,2611,368,Excluded,170,35,Sligeach-Liatroim
 Sligo-Leitrim,McWeeney,Paul,M,The National Party - An Pa/irtí Na/isiúnta,T.N.P.A.P.N.,15,0,2482,451,Excluded,171,35,Sligeach-Liatroim
@@ -471,7 +471,7 @@ Sligo-Leitrim,Scanlon,Eamon,M,Fianna Fa/il,F.F.,15,2821,0,6246,,177,35,Sligeach-
 Sligo-Leitrim,Walsh,Thomas,M,Fine Gael,F.G.,15,0,0,4760,Excluded,178,35,Sligeach-Liatroim
 Sligo-Leitrim,Wynne,Sean,M,Non-Party,NON-P.,15,0,1050,1310,Excluded,179,35,Sligeach-Liatroim
 Tipperary,AHEARN,GARRET,M,Fine Gael,F.G.,9,2133,0,6206,,184,36,Tiobraid Árann
-Tipperary,BROWNE,MARTIN,M,Sinn Féin,S.F.,9,0,0,10004,Elected,185,36,Tiobraid Árann
+Tipperary,BROWNE,MARTIN,M,Sinn Fe/in,S.F.,9,0,0,10004,Elected,185,36,Tiobraid Árann
 Tipperary,CAHILL,Dolores,F,Non-Party,NON-P.,9,0,2882,521,Excluded,186,36,Tiobraid Árann
 Tipperary,CAHILL,JACKIE,M,Fianna Fa/il,F.F.,9,693,0,7940,Elected,187,36,Tiobraid Árann
 Tipperary,FARRELL,SANDRA,F,Fianna Fa/il,F.F.,9,0,1134,2233,Excluded,188,36,Tiobraid Árann
@@ -486,7 +486,7 @@ Tipperary,O'DONNELL,ROB,M,Green Party/ Comhaontas Glas,G.P.,9,0,94,3170,Excluded
 Tipperary,SKEHAN,MARESE,F,Non-Party,NON-P.,9,0,3223,182,Excluded,197,36,Tiobraid Árann
 Waterford,BUTLER,MARY,F,Fianna Fa/il,F.F.,7,0,0,6644,Elected,161,38,Port  Lairge
 Waterford,CLEARY,DR RONAN,M,Aontú,A.,7,0,1263,1049,Excluded,163,38,Port  Lairge
-Waterford,CULLINANE,DAVID,M,Sinn Féin,S.F.,7,0,0,20569,Elected,164,38,Port  Lairge
+Waterford,CULLINANE,DAVID,M,Sinn Fe/in,S.F.,7,0,0,20569,Elected,164,38,Port  Lairge
 Waterford,CUMMINS,JOHN,M,Fine Gael,F.G.,7,2275,0,4592,,165,38,Port  Lairge
 Waterford,DUNPHY,UNA,F,Solidarity - People Before Profit,S.P.B.P.,7,0,0,1153,Excluded,166,38,Port  Lairge
 Waterford,GEOGHEGAN,DAMIEN,M,Fine Gael,F.G.,7,0,0,4289,Excluded,167,38,Port  Lairge
@@ -505,13 +505,13 @@ Wexford,Kehoe,Paul,M,Fine Gael,F.G.,11,976,0,6337,Elected,203,40,Loch Garman
 Wexford,McDonald,Lisa,F,Fianna Fa/il,F.F.,11,0,1718,1351,Excluded,204,40,Loch Garman
 Wexford,Murphy,Bart James,M,Non-Party,NON-P.,11,0,3026,68,Excluded,205,40,Loch Garman
 Wexford,Murphy,Verona,F,Non-Party,NON-P.,11,664,0,5825,Elected,206,40,Loch Garman
-Wexford,Mythen,Johnny,M,Sinn Féin,S.F.,11,0,0,18717,Elected,207,40,Loch Garman
+Wexford,Mythen,Johnny,M,Sinn Fe/in,S.F.,11,0,0,18717,Elected,207,40,Loch Garman
 Wexford,O'Shea,Seanie,M,Independents 4 Change,I.4.C.,11,0,1539,825,Excluded,208,40,Loch Garman
 Wexford,Roseingrave,Paula,F,Green Party/ Comhaontas Glas,G.P.,11,0,446,2028,Excluded,209,40,Loch Garman
 Wexford,Sheehan,Michael,M,Fianna Fa/il,F.F.,11,0,0,4366,Excluded,210,40,Loch Garman
 Wexford,Wadding,Deirdre,F,Solidarity - People Before Profit,S.P.B.P.,11,0,0,1116,Excluded,211,40,Loch Garman
 Wicklow,BEHAN,JOE,M,Non-Party,NON-P.,15,0,0,2988,Excluded,183,41,Cill Mhanta/in
-Wicklow,BRADY,JOHN,M,Sinn Féin,S.F.,15,0,0,17297,Elected,185,41,Cill Mhanta/in
+Wicklow,BRADY,JOHN,M,Sinn Fe/in,S.F.,15,0,0,17297,Elected,185,41,Cill Mhanta/in
 Wicklow,BRIGGS,SHARON,F,Solidarity - People Before Profit,S.P.B.P.,15,0,524,1037,Excluded,186,41,Cill Mhanta/in
 Wicklow,CASEY,PAT,M,Fianna Fa/il,F.F.,15,0,0,4473,Excluded,187,41,Cill Mhanta/in
 Wicklow,CONNOR,SEAMUS,M,Aontú,A.,15,0,1621,1051,Excluded,188,41,Cill Mhanta/in
