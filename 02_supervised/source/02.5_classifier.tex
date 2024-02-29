@@ -9,7 +9,7 @@
 \usepackage{bm}
 \pagestyle{fancy}
 \lfoot{\texttt{ematm0067.github.io} / \texttt{ematm0044.github.io}}
-\lhead{Introduction to AI - 02.4\_logistic - Conor}
+\lhead{Introduction to AI - 02.5\_classifier - Conor}
 \rhead{\thepage}
 \cfoot{}
 
@@ -23,294 +23,127 @@
 
 \begin{document}
 
-\section*{Logistic regression.} 
+\section*{A linear classifier.} 
 
-Lets begin with an example, the Canadian linguist Jack Chambers is
-interested in dialect and language change among English speakers in
-the eastern part of Canada. He did a broad study where he discovered
-many on-going changes and tried to interpret them. The data are
-available, at least in summary form at
-\texttt{dialect.topography.artsci.utoronto.ca/}. In one example, from
-what is called the Golden Horseshoe, which extends along the western
-shore of Lake Ontario and includes the cities of Hamilton and Toronto,
-he discovered what to me looks like a surprising shift from weak to
-strong participle for the word \textsl{sneak}. He asked participants which they say from
-\begin{itemize}
-\item The little devil sneaked into the theatre.
-\item The little devil snuck into the theatre.
-\end{itemize}
-and roughly speaking found that younger people prefer `snuck' to
-`sneaked', the so called strong form over the weak. I had assumed
-there was a general trend towards weak forms.
+This section won't actually do anything that is different from the
+logistic regression we described in the previous section; instead it
+presents the same mathematics from a slightly different
+perspective. In the logistic regression example we started with a
+one-dimensional example, here we will look at another example, but
+this time a higher dimensional one, based on data from Irish elections.
 
-This graph below gives a simulated version of his data; the actual
-data have more points but bundle the participants into age bands. For
-the convenience of this lesson I have made artificial data, with fewer
-points but where the ages take any whole-year value: the artificial
-data is designed to have the same broad statistical structure as the
-real data. In the graph age is plotted along the bottom, and the
-$y$-value is zero for participants who say they use `snuck' and one
-for those who use `sneaked'. A small jitter has been added to the $y$
-value to stop the points covering each other, this is a common and
-useful graphical device used for data like this.
+Elections in Ireland use an elegant voting system called Single
+Transferable Vote that allows for constituency-based proportional
+voting. There are multi-seat constituencies and votes transfer as
+candidates are elected or eliminated, so it is a simplification to
+reduce the votes to the proportion for each party. However, for our
+purposes here this is what we have done. Based on the 2020
+election\footnote{data.gov.ie/dataset/candidate-details-for-general-election-2020}
+this figure show the fraction of `first preference' vote for two of
+the main parties, Fianna F\'{a}il and Fine Gael, for all 39 constituencies.
 \begin{center}
-  \includegraphics[]{02.4_sneak.png}
+  \includegraphics[]{02.5_ffVfg.png}
 \end{center}
+The constituencies have been labelled `urban', `mixed' and `rural' and
+this has been marked by colour. Don't take these labels too seriously;
+I guess it based on my own knowledge.
 
-  Now, clearly there is some relationship between age and usage. If we
-  take these data and bin them in ten year age bands and calculating
-  for each band what fraction for each band says `sneaked' we get
-  this:
-\begin{center}
-  \includegraphics[]{02.4_fraction.png}
-  \end{center}
-  and it is clear that younger people say `snuck' more often than
-  older. However, what we have learned so far is to model
-\begin{equation}
-\hat{u}=\beta_1 a+\beta_0
-\end{equation}
-where $a$ is the age and $u$ is some measure of
-`snuck-saying-ness'. This, though, clearly does not work; partly
-because a line looks to be the wrong shape but mostly because there is
-a sort of category error. The data are not composed of quantitative
-measurements of `snuck-saying-ness', the individual participants are
-either `snuck' or `sneaked' and so the best measure of
-`snuck-saying-ness' must surely be a probability, the probability a
-participant will answer `snuck'. However $\hat{u}$ above does not look
-much like a probability: it isn't limited to values between zero and
-one.
+It is clear there is a relationship between the voting pattern and
+settlement type with rural area more likely to vote for these two
+parties. There are exceptions, in voting local issues often change the
+result; the rural constituency Galway-Roscommon, for example, has
+three TDs\footnote{Teachta D\'{a}l\'{a}, the title given to a
+representative in Ireland}, one Sinn F\'{e}in, one who was in Fine
+Gael who left in protest following the closure of a local hospital and
+another who is an activist opposed to restrictions on the cutting of
+turf, a significant issue in an area with large amounts of
+bog. Similarly, the urban constituency with the largest Fianna
+F\'{a}il vote is Cork South-Central; this is the constituency of
+Miche\'{a}l Martin, who is leader of Fianna F\'{a}il, in the event he
+went on to become Taoiseach\footnote{the equivalent of Premier or Prime
+Minister} from 2020 to 2022.
 
-At its simplest the idea behind logistic regression is to take
-$\beta_1a+\beta_0$ and then use another function to `squash' it so
-that the values are between zero and one, so
+Lets just concentrate on the urban and rural consistituencies and
+imagine we want to guess the settlement type of an unknown
+constituency based on the Fi\'{a}nna Fail and Fine Gael votes. The
+obvious approach to that is to mark areas on the vote-fraction plane
+corresponding to rural and urban constituencies and, in a linear model
+that means dividing the plane using a straight line. In fact, this is
+the same as the logistic regression tasks. In logistic regression we
+modelled the probability using a logistic function:
 \begin{equation}
-\hat{p}=f(\beta_1 a+\beta_0)
+  p(\text{rural})=\sigma(\beta_0+\beta_1x_1+\beta_2x_2)
 \end{equation}
-where $f:\mathbb{R}\rightarrow[0,1]$ and
+where, in our current context, $x_1$ is the fraction voting Fianna
+F\'{a}il and $x_2$ the fraction voting Fine Gael. We found values for
+the $\beta$s by optimising a loss function, the log-likelihood. With
+these parameters we can then estimate a probability that any point is
+`rural'; for a binary classified we can dump this nicety and just
+predict that a constituency is rural if $p(\text{rural})\ge 0.5$. In
+fact, $\sigma(0)=0.5$ so the decision boundary where
+$\hat{p}(\text{rural})=0.5$ corresponds to
 \begin{equation}
-\hat{p_i}=f(\beta_1 a)i+\beta_0)
+  \beta_0+\beta_1x_1+\beta_2x_2=0
 \end{equation}
-is not the estimated probability that someone aged $a_i$ will prefer
-`snuck'. One example of a function that does this is the logistic
-function, often denoted using a sigma:
+or, put another way, the line
 \begin{equation}
-  \sigma(x)=\frac{1}{1+e^{-x}}
+  x_2=-\frac{\beta_1}{\beta_2}x_1-\frac{\beta_0}{\beta_2}
 \end{equation}
-which looks like this
+Points to the above and to the right of this line have a greater than
+0.5 estimated chance of being rural, those below and to the right,
+less than 0.5.
+
+We can plot that line
 \begin{center}
-  \includegraphics[]{02.4_logistic.png}
+  \includegraphics[]{02.5_ffVfg_linear.png}
 \end{center}
-This isn't the only function that looks like this; there are lots of
-others, we will discuss why this particular example is chosen
-later. In general, a function that has this general shape is called a
-\textsl{sigmoid function} and other examples include the arctan. A
-function wrapped around a linear model in regression is often called a
-\textsl{link function}.
-
-First, lets consider as to how we should fix $\beta_0$ and
-$\beta_1$. For now lets move away from the specific example and use
-the more general terminology of `success' and `failure' for the
-trials, equivalent to choice of `snuck' and `sneaked' and imagine we
-have a model
-\begin{equation}
-\hat{p}(x)=\sigma(\beta_1 x+\beta_0)
-\end{equation}
-so $p(x_i)$ is the `true probability' for success when $x=x_i$ and out
-estimate for the probability is $\hat{p}(x_i)$.  Given some data, we
-are interested in how well the estimated probabilities predict the
-actual results. This leads to the important concept of
-\textsl{likelihood}, A good model makes the data `likely', that is, it
-assigns it a probability near one. It sort of flips everything on its
-head, rather than a probability giving the chance of something
-happening, we already have the data and we want a model whose
-probability is high for what we know actually happened! This sort of
-logical somersault is often the key to machine learning concepts!
-
-Anyway, if a data point at $x_i$ is a success the likelihood is
-$\hat{p}(x_i)$, if it is a failure, then the likelihood is
-$1-\hat{p}(x_i)$.
-For a set of data
-\begin{equation}
-  \mathcal{D}=\{(x_1,y_1),(x_2,y_2),\ldots,(x_n,y_n)\}
-\end{equation}
-where $y_i=1$ for success and $y_1=0$ for failure, the overall
-likelihood is
-\begin{equation}
-  L=\prod_{y_i=1}\hat{p}(x_i)\prod_{y_i=0}(1-\hat{p}(x_i))
-\end{equation}
-The goal is to pick the parameters in the definition of $\hat{p}$ to
-maximize $L$.
-
-Now one problem is probabilities is that they get
-multiplied; this causes no end of grief, for a start, it can make the
-calculus very tedious and, more seriously, multiplying lots of small
-numbers gives you a tiny number and this can cause imprecision
-problems with numerical computation. For these reasons alone it makes
-sense to consider the log-likelihood, recalling
-\begin{equation}
-  \log{ab}=\log{a}+\log{b}
-\end{equation}
-we have
-\begin{equation}
-  \log{L}=\sum_{y_i=1}\log\hat{p}(x_i)+\sum_{y_i=0}\log(1-\hat{p}(x_i))
-\end{equation}
-or, sometimes we use $-\log{L}$, the negative log-likelihood, purely
-because we like to minimize things rather than maximize them, even if
-one is equivalent to the other. I should also say that adding the
-logarithm makes good sense computationally and, as with using the
-square mean error rather than the root mean square error, the fact
-that the logarithm is a monotonically increasing function means that
-we aren't changing where the maximimum is, so it could just be
-considered a matter of convenience. However, while we won't go into it
-here, there are also strong arguments from information theory to use
-the logarithm.
-
-Hence, in short, we have a model mapping data to estimated
-probabilities, we can write this as $\hat{p}(x;\theta)$ where $\theta$
-are the parameters, in this case $\beta_0$ and $\beta_1$. Our goal is
-to pick the values of $\beta_0$ and $\beta_1$ to minimize the
-objective function, in this case the negative log-likelihood,
-sometimes in this case somewhat sloppily referred to as the
-cross-entropy loss. In the notation used in machine learning we want
-\begin{equation}
-  \theta_*=\text{argmin}_\theta [-\log{L(\text{data},\theta)}]
-\end{equation}
-Here $\theta_*$ is a common notation for `the best value' or `the
-value we are looking for' and argmin$_\theta$[stuff] is the value of
-$\theta$ which minimizes `stuff'.
-
-Now we need to do some calculus. Lets get the little pieces we
-need. Using the quotient rule you can check
-\begin{equation}
-  \frac{d\sigma{x}}{dx}=\sigma(x)[1-\sigma(x)]
-\end{equation}
-and you should recall that
-\begin{equation}
-  \frac{d\log{x}}{dx}=\frac{1}{x}
-\end{equation}
-So, using the chain rule
-\begin{equation}
-  \frac{d}{d\beta_0}\log{\sigma(\beta_1x+\beta_0)}=1-\sigma(\beta_1x+\beta_0)
-\end{equation}
-and
-\begin{equation}
-  \frac{d}{d\beta_1}\log{\sigma(\beta_1x+\beta_0)}=x[1-\sigma(\beta_1x+\beta_0)]
-\end{equation}
-In fact, putting this together, along with the two similar derivatives, we find
-\begin{align}
-  \frac{d\log{\hat{p}}}{d\beta_0}&=1-\hat{p}\\  \nonumber
-    \frac{d\log{\hat{p}}}{d\beta_1}&=x(1-\hat{p})\\ \nonumber
-  \frac{d\log{(1-\hat{p})}}{d\beta_0}&=\hat{p}\\ \nonumber
-  \frac{d\log{(1-\hat{p})}}{d\beta_1}&=x\hat{p}
-\end{align}
-Clearly the logistic function is very convenient but not convenient
-enough for a closed form solution. These formula mean that the
-derivatives of the negative log-likelihood will contain terms that
-look like $\sigma(\beta_1x_i+\beta_0)$ for the different $x_i$
-values. This will lead to equations where you can't write down a
-general solution, as we could with linear regression. However, the
-numerical problem, for example using gradient descent as described
-before, can find a solution.
-
-As a side note, any library for data modelling will have a command for
-doing logistic regression; this will find the values of the beta
-parameters using numerical methods. This is a quick and robust
-operation, the objective function has a nice structure and there is an
-explicit formula for the gradient based on the derivatives above. In
-fact, although gradient descent will work in this case, there is
-enough known that other, quicker and more bullet-proof, methods are
-usually employed, such as the Newton-Raphson algorithm. This algorithm
-will solve the equations for zero gradient rather than navigating down
-the gradient. Gradient descent is commonly used because it can
-commonly be applied, but it is not particularly quick and it can be
-fussy so in special cases where there are alternatives it is usually
-best to use them. Luckily a lot of these implementation details are
-hidden away from us by software libraries!
-
-Returning to our example we can fit the logistic curve, we find $\beta_0=-4.03$ and $\beta_1= 0.067$, it looks like this:
+We can see it has done ok, it isn't perfect, but then no line is going
+to be. We can look at the assigned probability using a heatmap
 \begin{center}
-  \includegraphics[]{02.4_fit.png}
-  \end{center}
-We can see that there is a nice fit. The data are from twenty years
-ago, you could imagine replacing the age with date of birth to use
-this curve to make predictions about how people speak today. In
-performed an undersampled study, well to be more honest I asked
-exactly one person from the Golden Horseshoe what they would say and
-the said ``snuck'' for sure, that they were aware of `sneaked' as an
-alternative but it seemed very old-fashioned.
+  \includegraphics[]{02.5_ffVfg_heatmap.png}
+\end{center}
+Clearly, it is has fitted the points as best as it can using a linear
+classifier and this gives a useful model of settlement type, but a
+linear model, perhaps unsurprisingly, has failed to account for Cork
+South-Central, assigning it a high probability of being rural. We can
+also see that the line is nearly vertical; the Fine Gael vote does not
+seem to be playing a significant role in distinguishing rural and
+urban. There is a complex history in this, Fianna F\'{a}il is a broad
+party which lost a lot of support in the tumult surrounding the Great
+Recession it lost support, particularly to Sinn F\'{e}in in urban
+areas; however, Sinn F\'{e}in also has rural support so including it
+isn't much better
+\begin{center}
+  \includegraphics[]{02.5_ffVsf.png}
+\end{center}
+There are lots of other parties we could consider, the left-wing and
+social democratic parties like The Labour Party, The Green Party,
+People Before Profits and The Social Democrats tend to do better in
+cities. However, I don't want to get too distracted so lets stop. The data are on the github though if you want
+to look, for example, if you want to do a classifier in higher
+dimensions where the line will be replaced by a plane or hyperplane.
 
-Logistic regression is one of the basic tools of data science and is
-with great frequency a useful approach to data. Our discussion has not
-really addressed the question as to why it works; we have defined a model:
-\begin{equation}
-  \hat{p}(x,\beta_0,\beta_1)=\sigma(\beta_1x+\beta_0)
-\end{equation}
-and discussed how to fit it, we have also seen it is the right sort of
-model for data with a yes or no outcome. This does not tell us that we
-can expect it to work, no more than our discussion of linear
-regression explained why it is often useful. This, of course, is a
-complicated question; in the case of linear regression we can point to
-the frequency of linear rules in nature and to the prominence of the
-linear term in a Taylor expansion; we can also point to the imperical
-fact that it often works. In the case of logistic regression the
-discussion is even more complicated because we need to also account
-for the particular form of the logistic function.
-
-In fact, there is a sort of attempt at a principled argument given
-which looks something like this, if
-\begin{equation}
-  \hat{p}=\frac{\hat{o}}{\hat{o}+1}
-\end{equation}
-where in the model
-\begin{equation}
-  \hat{o}=e^{\beta_1x+\beta_0}
-\end{equation}
-where you should note the sign of the exponent. Now solving for $o$ we get
-\begin{equation}
-  \hat{o}=\frac{\hat{p}}{1-\hat{p}}
-\end{equation}
-This ratio is known as the \textsl{odds}, the ratio of the probability
-of success to the probability of failure. In terms of the odds, the
-regression model is stating that
-\begin{equation}
-  \log\hat{o}=\beta_1x+\beta_0
-\end{equation}
-In other words, the assumption in logistic regression is that the
-log-odds depends in a linear way on the variable $x$. If you look you
-will find arguments as to why this is a natural assumption, if you
-understand these arguments come and explain them to me, I find them a
-bit mysterious, but the key idea is that a lot of processes that
-produce yes or no type data are well approximated by assuming there is
-a linear model for the log-odds. My own feeling is that the precise
-choice of a sigmoid function does not really matter, the link to
-log-odds is elegant but does not give a simple proof that the logistic
-function is the `best' sigmoid function; however, the calculus works
-out nicely using the logistic function and imperically we know
-logistic regression is often useful!
-
-As a final note, obviously everything we've done here has relied on a
-one-dimensional regression:
-\begin{equation}
-  \hat{p}=\sigma(\beta_1x+\beta_0)
-\end{equation}
-but in practice you will usually have more than one independent
-variable and the whole framework generalizes in the obvious way:
-\begin{equation}
-  \hat{p}=\sigma(\bm{\beta}\cdot \mathbf{x}+\beta_0)
-\end{equation}
-
+Another topic we won't consider here is the objective function, we
+took the log-likelihood loss from logistic regression, but there are
+others used for this problem. These approaches, some of which also
+apply to regression, aim to \textsl{regularize}, that is, come up with
+a fit that is less influenced by outliers and more likely to work on
+unseen data; these leads to topics like \textsl{ridge regression},
+\textsl{lasso regularizers} and \textsl{support vector machines}.
+Regularization is, in general, something we will
+consider more in the future. In the next section though, we will look
+at the perceptron, which at first seems like a weird way to reformulate
+linear classification but turns out to be useful.
 
 \section*{Summary}
-Lots of data has the form $(\mathbf{x},y)$ where $\mathbf{x}$ are
-independent variables and $y$ the outcome has a binary form, yes or
-no, zero or one, failure of success. A common model for this is logistic regression
+This is a straight-forward section in that it doesn't really introduce any new mathematics, all it does is replace the logistic regressor
 \begin{equation}
-  \hat{p}=\sigma(\bm{\beta}\cdot \mathbf{x}+\beta_0)
+  \hat{p}=\sigma(\beta_0+\bm{\beta}\cdot\mathbf{x})
 \end{equation}
-where $\sigma(x)=1/(1+\exp{(-x)})$ is the logistic function. To find the parameters we usually minimize the negative log-likelihood.
+with the classification boundary corresponding to $\hat{p}=0$:
 \begin{equation}
-  \mathcal{E}=-\log{L}=-\sum_{y_i=1}\log\hat{p}(\mathbf{x}_i)-\sum_{y_i=1}\log[1-\hat{p}(\mathbf{x}_1)]
+  \beta_0+\bm{\beta}\cdot\mathbf{x}=0
 \end{equation}
-This is done numerically.
+
 \end{document}
 

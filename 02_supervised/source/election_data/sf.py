@@ -2,6 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+from matplotlib.colors import ListedColormap
+
+from sklearn.linear_model import LogisticRegression
+
 # For df_candidate
 df_candidate = pd.read_csv('candidate_no_fada.csv', encoding='iso-8859-1')
 
@@ -24,21 +28,49 @@ mixed_constituencies = [
     "Kildare North", "Kildare South", "Louth", "Waterford", "Wicklow"
 ]
 
-print(len(set(df['Constituency'])))
 
 # Adding a new column for the constituency type
 df['Type'] = df['Constituency'].apply(
     lambda x: "urban" if x in urban_constituencies else ("mixed" if x in mixed_constituencies else "rural")
 )
 
-print(df.head())
+old_df=df.copy()
+
+df=df[df['Type'] != "mixed"]
 
 # Preparing the plot data
 
-df_pivot = df.pivot_table(index=['Constituency', 'Type'], columns='Party Id', values='Vote Fraction').reset_index()
+partyX="Fianna Fa/il"
+partyY="Sinn Fe/in"
+
+x1=np.array(df[df["Party Id"]==partyX]["Vote Fraction"])
+x2=np.array(df[df["Party Id"]==partyY]["Vote Fraction"])
+x =np.array(list(zip(x1,x2)))
+y=np.array(df[df["Party Id"]==partyX]["Type"])
+
+clf = LogisticRegression(penalty='none')
+clf.fit(x, y)
+
+new_y=clf.predict(x)
+
+b0 = clf.intercept_[0]
+b1, b2 = clf.coef_[0]
+c = -b0/b2
+m = -b1/b2
+
+print(m,c)
+
+#x_values = np.linspace(x1.min(),x1.max(), 400)
+x_values = np.linspace(0.15,0.4, 400) 
+
+# Calculating the corresponding y values using y = mx + c
+y_values = m * x_values + c
+
+
+df_pivot = old_df.pivot_table(index=['Constituency', 'Type'], columns='Party Id', values='Vote Fraction').reset_index()
 
 colors = {'urban': 'red', 'rural': 'green', 'mixed': 'gray'}
-
+alphas =  {'urban': 0.6, 'rural': 0.6, 'mixed': 0.2}
 
 
 # Plotting
@@ -46,14 +78,28 @@ colors = {'urban': 'red', 'rural': 'green', 'mixed': 'gray'}
 plt.figure(figsize=(3.5, 2.5))
 
 for ctype, group in df_pivot.groupby('Type'):
-    plt.scatter(group['Fianna Fa/il'], group['Fine Gael'], color=colors[ctype], label=ctype, alpha=0.6)
+    plt.scatter(group[partyX], group[partyY], color=colors[ctype], label=ctype, alpha=alphas[ctype])
+
+#for i in range(len(y)):
+#    plt.scatter(x1[i],x2[i],color=colors[y[i]])
+
+xlim = plt.xlim()
+ylim = plt.ylim()
+
+
+plt.plot(x_values,y_values)
+
+plt.xlim(xlim)
+plt.ylim(ylim)
 
 plt.xlabel('FF fraction')
 
-plt.ylabel('FG fraction')
+plt.ylabel('SF fraction')
 
 plt.legend(loc='upper left', bbox_to_anchor=(1, 1),title='Type')
+
 plt.tight_layout()
 plt.grid(True)
-plt.savefig('../02.5_ffVfg.png', dpi=300)
+plt.savefig('../02.5_ffVsf.png', dpi=300)
 plt.show()
+
