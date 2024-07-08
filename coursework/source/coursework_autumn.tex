@@ -16,21 +16,21 @@
 
 In this coursework you should create an artificial dataset and test
 two classification algorithms on the data you have produced. The
-dataset should be produced by picking a number of dimensions, for
+dataset should be produced by first picking a number of dimensions, for
 example $d=5$. Now select $c=3$ `center points' in that five
 dimensional space, in the first instance pick each component uniformly
-in the interval $[-1,1]$. Now for each center point, make $n=20$
+in the interval $[-1,1]$. Next for each center point, make $n=20$
 datapoints from a multivariate normal distribution centered on the
 center point with variance $\sigma^2$, with $\sigma=0.5$.
 
 Now run two different classification algorithms on these data and
 assess their accuracy. They should be pretty accurate. Consider three
 different ways to change the simulated data to reduce their accuracy,
-this could include changing $d$, $\sigma$, $n$, for high marks you
-should include at least more complicated manipulation, such as the
+this could include changing $d$, $\sigma$, $n$. For high marks you
+should include at least one more complicated manipulation, such as changing the
 balance in the number of points for each center point or changing the
-shape of the cloud of simulated data, for full marks this might
-include cloud shapes that are nothing like a ball, even the ball used
+shape of the cloud of simulated data. For full marks this might
+include cloud shapes that are nothing like a ball, not even the balls used
 in Australian or American football.
 
 Produce plots showing how the accuracy changes under these
@@ -55,16 +55,15 @@ self-contained.
 As a rough guide to marking:
 \begin{itemize}
 \item Initial production of simulated data, including some graphs or other approaches to visualisation. (6 marks).
-\item Two algorithms should be tested, if only one algorithm is
-  included the 28 available marks will be halved.
+\item Two algorithms should be tested along with three manipulations.
 \item Overall presentation (3 marks), including use of appropriate
   sections, plots, diagrams, or tables to make your point. Do not
   include code snippets in the report. Instead, describe in words or
   equations what you are implementing. Format equations correctly.
 \item Suitable choice of algorithms (2 marks).
 \item Suitable choice of evaluation for algorithms (4 marks).
-\item Two more obvious manipulations and an illustration of who they change claissification accuracy, with a good and sensible set of measurements of accuracy. (4 marks)
-\item A more advance manipulation of the simulated data along with the corresponding information on how this affects classification. (4 marks)
+\item Two more obvious manipulations and an illustration of how they change classification accuracy, with a good and sensible set of measurements of accuracy. (2x5 marks)
+\item A more advance manipulation of the simulated data along with the corresponding information on how this affects classification. (6 marks, this is reduced to 3 marks if the manipulation is another more obvious one).
 \item Bonus marks if the advanced manipulation is very sophisticated. (2 marks)
 \item Insight into what this experiments tells us about the two classification algorithm. (3 marks)
 \item There are some marks (6 marks) for something surprising and
@@ -80,12 +79,12 @@ in what we teach, in how we teach, how we examine. These changes come
 with complex ethical challenges, for example, in how we assess
 students in a fair way while teaching them to make use of AI tools. It
 is already clear that students are using AI to do coursework
-questions, particularly those with essay type answers; this makes the
+questions, particularly those with essay type answers. This makes the
 marks or degree-grades less meaningful, narrowing the opportunity for
 particularly able or hard-working students to succeed in competition
 with students from more privileged backgrounds. Indeed, more
 generally, AI may advantage some students over other, or may amplify
-existing biases; more optimistically, AI may help address ethical
+existing biases. More optimistically, AI may help address ethical
 challenges already embedded in higher education. Discuss this.
 
 \subsection*{Report}
@@ -112,13 +111,13 @@ your report. It will not, however, be marked in and of itself.
 
 \subsection*{Submission}
 
-The deadline for report and code: 13h00 (GMT+1) on 22nd May, there
+The deadline for report and code: 13h00 (GMT+1) on 2024-08-05, there
 will be a submission point on Blackboard under the ``assessment,
 submission and feedback'' link. Please upload the following two files:
 \begin{enumerate}
-\item Your report as a PDF with filename <student\_number>.pdf, where ``<student\_number'' is replaced by your student number, not your username. Upload this to the submission point ``Introduction to AI Coursework (Turnitin)''.
+\item Your report as a PDF with filename [student\_number].pdf, where ``[student\_number]'' is replaced by your student number, not your username. Upload this to the submission point ``Introduction to AI Coursework (Turnitin)''.
 \item Your code inside a single zip file with filename
-  <student\_number>.zip. Inside the zip file there should be a single
+  [student\_number].zip. Inside the zip file there should be a single
   folder containing your code, with your student number as the folder
   name. Please remove datasets and other large files to minimise the
   upload size - we only need the code itself. Upload this file to the
